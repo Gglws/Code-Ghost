@@ -1,3 +1,28 @@
+body {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.header {
+  background-color: black;
+  flex-direction: row;
+}
+
+.introBox {
+  border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////// Gage's playground */
 .formFooter {
   height: 5%;
   width: 100%;
