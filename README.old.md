@@ -1,2 +1,0 @@
-# MCSP-FrontEndCapstone
-MCSP-FrontEndCapstone
