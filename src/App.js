@@ -1,24 +1,32 @@
+
+//IMPORT SECTION START
+import Backend from "./testing_backend/Backend.js";
+import Header from "./robin/Header.js";
+import Intro from "./robin/Intro.js";
+import Daeyeon from "./robin/profile highlights/Daeyeon.js";
+import Gage from "./robin/profile highlights/Gage.js";
+import Jeremy from "./robin/profile highlights/Jeremy.js";
+import Robin from "./robin/profile highlights/Robin.js";
 import "./App.css";
 import FormFooter from "./FormFooter.js";
+//IMPORT SECTION END
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
 
-      <FormFooter />
+      </header>
+          <Header/>
+          <Intro/>
+          <Daeyeon/>
+          <Gage/>
+          <Jeremy/>
+          <Robin/>
+          <FormFooter />
+        <Backend />
+
     </div>
   );
 }
