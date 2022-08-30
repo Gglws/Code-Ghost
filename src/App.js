@@ -1,3 +1,6 @@
+
+import Form from "./Form.js";
+import React from "react";
 //IMPORT SECTION START
 import Backend from "./testing_backend/Backend.js";
 import Header from "./robin/Header.js";
@@ -13,6 +16,10 @@ import FormFooter from "./FormFooter.js";
 function App() {
   return (
     <div className="App">
+
+      <header className="App-header">
+        <Form />
+      </header>
       <header className="App-header"></header>
       <Header />
       <Intro />
