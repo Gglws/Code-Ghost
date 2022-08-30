@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderMenu from './HeaderMenu'
+import HeaderMenu from './HeaderMenu.js'
 import { motion } from "framer-motion"
 
 function Header() {

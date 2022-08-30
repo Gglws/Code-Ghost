@@ -2,12 +2,12 @@
 
 //IMPORT SECTION START
 import Backend from "./testing_backend/Backend.js";
-import Header from "./robin/Header";
-import Intro from "./robin/Intro";
-import Daeyeon from "./robin/profile highlights/Daeyeon";
-import Gage from "./robin/profile highlights/Gage";
-import Jeremy from "./robin/profile highlights/Jeremy";
-import Robin from "./robin/profile highlights/Robin";
+import Header from "./robin/Header.js";
+import Intro from "./robin/Intro.js";
+import Daeyeon from "./robin/profile highlights/Daeyeon.js";
+import Gage from "./robin/profile highlights/Gage.js";
+import Jeremy from "./robin/profile highlights/Jeremy.js";
+import Robin from "./robin/profile highlights/Robin.js";
 //IMPORT SECTION END
 
 function App() {
