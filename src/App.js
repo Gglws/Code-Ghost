@@ -1,9 +1,10 @@
+import Backend from "./testing_backend/Backend.js";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        START
+        <Backend />
       </header>
     </div>
   );

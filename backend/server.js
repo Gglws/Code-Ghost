@@ -5,12 +5,12 @@ import dotenv from "dotenv";
 import cors from 'cors';
 
 dotenv.config();
-const PORT = 3000;
+const PORT = 5000;
 // const { DATABASE_URL, NODE_ENV, PORT} = process.env;
 
 const app = express();
 app.use(express.json());
-app.use(express.static('public')); 
+app.use(express.static('/..public')); 
 app.use(cors());
 
 const pool = new pg.Pool({
