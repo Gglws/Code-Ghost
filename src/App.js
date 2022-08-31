@@ -1,4 +1,3 @@
-
 import Form from "./Form.js";
 import React from "react";
 //IMPORT SECTION START
@@ -28,7 +27,7 @@ function App() {
       <Jeremy />
       <Robin />
       <FormFooter />
-      <Backend />
+      {/* <Backend /> */}
     </div>
   );
 }
