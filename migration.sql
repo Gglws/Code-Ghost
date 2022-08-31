@@ -2,11 +2,13 @@ DROP TABLE IF EXISTS memberInfo;
 
 CREATE TABLE memberInfo (
     id SERIAL,
-    member_name TEXT,
-    member_url TEXT
+    name TEXT,
+    email TEXT,
+    subject TEXT,
+    message TEXT
 );
 
-INSERT INTO memberInfo (member_name, member_url) VALUES ('Daeyeon', 'daeyeon@gmail.com');
-INSERT INTO memberInfo (member_name, member_url) VALUES ('Jeremy', 'jeremy@gmail.com');
-INSERT INTO memberInfo (member_name, member_url) VALUES ('Gage', 'gage@gmail.com');
-INSERT INTO memberInfo (member_name, member_url) VALUES ('Robin', 'robin@gmail.com');
+INSERT INTO memberInfo (name, email, subject, message) VALUES ('Daeyeon', 'daeyeon@gmail.com', 'subject', 'message');
+INSERT INTO memberInfo (name, email, subject, message) VALUES ('Jeremy', 'jeremy@gmail.com', 'subject', 'message');
+INSERT INTO memberInfo (name, email, subject, message) VALUES ('Gage', 'gage@gmail.com', 'subject', 'message');
+INSERT INTO memberInfo (name, email, subject, message) VALUES ('Robin', 'robin@gmail.com', 'subject', 'message');
