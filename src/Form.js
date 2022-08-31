@@ -26,7 +26,11 @@ function Form() {
             method: "POST",
             data: { email, password, fullName, company },
           }).then(
-              console.log('signed up')
+              console.log('signed up'),
+              setEmail(''),
+              setCompany(''),
+              setPassword(''),
+              setFullName('')
           );
     }
     return (
