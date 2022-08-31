@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 const Backend = () => {
     const [members, setMembers] = useState([]);
     useEffect(() => {
-            fetch("http://localhost:5003/api/member")
+            fetch("http://localhost:5001/api/member")
             .then((res) => {
                 return res.json();
             })
