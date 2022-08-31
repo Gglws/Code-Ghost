@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 function Form() {
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [fullName, setFullName] = useState("");
@@ -64,6 +65,7 @@ function Form() {
       </form>
       <br></br>
     </>
+
   );
 }
 export default Form;
