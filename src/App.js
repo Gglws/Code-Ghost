@@ -7,6 +7,8 @@ import "./styles.css";
 import FormFooter from "./FormFooter.js";
 import ProfileHighlights from "./ProfileHighlights.js";
 import PlaceholderSqlBox from "./PlaceholderSqlBox.js";
+// import Footer_testing from "./testing_backend/Footer_testing.js";
+
 //IMPORT SECTION END
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
       </div>
       <FormFooter />
       <Backend />
+      {/* <Footer_testing /> */}
     </div>
   );
 }
