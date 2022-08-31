@@ -1,13 +1,14 @@
-body, html, main {
+body,
+html,
+main {
   background: black;
   display: flex;
   flex-direction: column;
   color: white;
   width: 100%;
-  margin:0;
+  margin: 0;
   /* padding:0; */
 }
-
 
 .header {
   justify-content: center;
@@ -18,7 +19,7 @@ body, html, main {
   min-width: 100vw;
 }
 
-.innerApp{
+.innerApp {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,11 +40,11 @@ body, html, main {
   height: clamp(20px, 5vw, 40px);
   border: 1px solid white;
   border-radius: 10px;
-  width:  clamp(300px, 70vw, 800px);
+  width: clamp(300px, 70vw, 800px);
   height: 700px;
 }
 
-.profile {
+/* .profile {
   margin: 15px;
   border-radius: 20px;
   background-color: rgb(36, 37, 41);
@@ -51,35 +52,29 @@ body, html, main {
   border: 1px solid white;
   width:  clamp(300px, 70vw, 800px);
   height: 300px;
-}
+} */
 
 .sqlBox {
   display: flex;
   flex-direction: row;
 }
 
-.sqlSubBox{
+.sqlSubBox {
   margin-right: 10px;
   border-radius: 10px;
   background-color: rgb(36, 37, 41);
   height: clamp(20px, 5vw, 40px);
   border: 1px solid white;
-  width:  clamp(90px, 15.25vw, 200px);
+  width: clamp(90px, 15.25vw, 200px);
   height: 500px;
 }
-
-
-
-
-
-
 
 /* ////////////////////////////// Gage's playground */
 .formFooter {
   height: 5%;
   width: 100%;
   background: black;
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
@@ -121,10 +116,57 @@ body, html, main {
 
 .xButton {
   width: 10%;
-  margin-right: 10px;
   align-items: right;
 }
 
 textarea {
   resize: none;
+}
+
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 100%;
+  height: 400px;
+  background: purple;
+  border-radius: 30px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    25deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.profileHeader {
+  width: 74%;
+  height: 20px;
+  padding: 30px;
+}
+
+.profilePicture {
+  margin-top: 20px;
+  border-radius: 50%;
+  height: 220px;
+  width: 20%;
+  background-image: url("../assets/images.png");
+}
+
+.profileContent {
+  padding-left: 30px;
+  padding-bottom: 30px;
+  width: 70%;
+  height: 70%;
 }
