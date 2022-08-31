@@ -59,6 +59,21 @@ app.get("/api/member", (req, res) => {
     });
 });
 
+app.post("/api/member", (req, res) => {
+
+    const {name, email, subject, message} = req.body
+    pool.query(`INSERT INTO memberInfo(name, email, subject, message) VALUES ($1, $2, $3, $4) RETURNING *;`,
+        [name, email, subject, message])
+    .then((data) => {
+        console.log(data);
+        if (data.rows.length === 0) {
+            res.sendStatus(404);
+        } else {
+            res.send(data.rows[0]);
+        }
+    })
+});
+
 app.use((err, req, res, next)=> {
     res.sendStatus(500);
 });

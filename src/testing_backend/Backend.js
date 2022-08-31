@@ -18,8 +18,10 @@ const Backend = () => {
                 return (
                     <ul key={member.id}>
                         <li>
-                            {member["member_name"]}
-                            <p>{member["member_url"]}</p>
+                            {member["name"]}
+                            <p>{member["email"]}</p>
+                            <p>{member["subject"]}</p>
+                            <p>{member["message"]}</p>
                         </li>
                     </ul>
                     )
