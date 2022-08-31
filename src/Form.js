@@ -5,13 +5,15 @@ function HandleSubmit() {
 }
 
 function Form() {
-    return (
-        <form onSubmit={HandleSubmit}>
-        <input type="text" placeholder='Name' ></input>
-        <input type="email" placeholder='Email' ></input>
-        <button/>
-    </form>
-    );
+  return (
+    <div className="login">
+      <form onSubmit={HandleSubmit}>
+        <input type="text" placeholder="Name"></input>
+        <input type="email" placeholder="Email"></input>
+        <button />
+      </form>
+    </div>
+  );
 }
 
 export default Form;
