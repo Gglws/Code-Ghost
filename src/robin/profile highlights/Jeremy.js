@@ -2,7 +2,7 @@ import React from 'react'
 
 function Jeremy() {
   return (
-    <div>Jeremy</div>
+    <div className='profile'>Jeremy</div>
   )
 }
 

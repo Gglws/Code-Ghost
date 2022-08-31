@@ -2,7 +2,7 @@ import React from 'react'
 
 function Robin() {
   return (
-    <div className='robin'>Robin</div>
+    <div className='profile'>Robin</div>
   )
 }
 
