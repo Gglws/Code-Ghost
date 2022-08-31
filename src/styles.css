@@ -14,20 +14,12 @@ body {
   border: 1px solid white;
 }
 
-
-
-
-
-
-
-
-
 /* ////////////////////////////// Gage's playground */
 .formFooter {
   height: 5%;
   width: 100%;
   background: black;
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
@@ -69,10 +61,57 @@ body {
 
 .xButton {
   width: 10%;
-  margin-right: 10px;
   align-items: right;
 }
 
 textarea {
   resize: none;
+}
+
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 100%;
+  height: 400px;
+  background: purple;
+  border-radius: 30px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    25deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.profileHeader {
+  width: 74%;
+  height: 20px;
+  padding: 30px;
+}
+
+.profilePicture {
+  margin-top: 20px;
+  border-radius: 50%;
+  height: 220px;
+  width: 20%;
+  background-image: url("../assets/images.png");
+}
+
+.profileContent {
+  padding-left: 30px;
+  padding-bottom: 30px;
+  width: 70%;
+  height: 70%;
 }
