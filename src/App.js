@@ -1,44 +1,43 @@
 //IMPORT SECTION START
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Login from "./components/Login.js";
+import Home from "./components/Home.js";
+import About from "./components/About.js";
 import React from "react";
-import Header from "./robin/Header.js";
-import Intro from "./robin/Intro.js";
 import "./styles.css";
-import FormFooter from "./FormFooter.js";
-import ProfileHighlights from "./ProfileHighlights.js";
-import PlaceholderSqlBox from "./PlaceholderSqlBox.js";
-
-import LoginForm from "./loginForm.js";
-
-
-import { motion, useScroll } from "framer-motion";
-
-// import Backend from "./testing_backend/Backend.js";
-// import Footer_testing from "./testing_backend/Footer_testing.js";
-
-
-
-//IMPORT SECTION END
 
 function App() {
-  const { scrollYProgress } = useScroll();
-
   return (
-    <div className="App">
-      <motion.div
-        className="progress-bar"
-        style={{ scaleX: scrollYProgress }}
-      />
-      <Header />
-      <LoginForm />
-      <div className="innerApp">
-        <Intro scroll={scrollYProgress}/>
-        <ProfileHighlights />
-        <PlaceholderSqlBox />
-      </div>
-      <FormFooter />
-      {/* <Backend /> */}
-      {/* <Footer_testing /> */}
-    </div>
+
+    <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login />}/>
+        </Routes>
+    </Router>
+
+    // <div className="App">
+    //   <motion.div
+    //     className="progress-bar"
+    //     style={{ scaleX: scrollYProgress }}
+    //   />
+    //   <Header />
+    //   <LoginForm />
+    //   <div className="innerApp">
+    //     <Intro scroll={scrollYProgress}/>
+    //     <ProfileHighlights />
+    //     <PlaceholderSqlBox />
+    //   </div>
+    //   <FormFooter />
+    //   {/* <Backend /> */}
+    //   {/* <Footer_testing /> */}
+    // </div>
+
   );
 }
 
