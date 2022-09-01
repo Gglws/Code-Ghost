@@ -60,7 +60,7 @@ function Form() {
           value={company}
           onChange={updateCompany}
         ></input>
-        <button>Submit</button>
+        <input type="submit"/>
       </form>
       <br></br>
     </>
