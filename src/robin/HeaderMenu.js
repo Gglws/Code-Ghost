@@ -2,7 +2,7 @@ import React from 'react'
 
 function HeaderMenu() {
   return (
-    <div>HeaderMenu</div>
+    <div className='headerMenu'>HeaderMenu</div>
   )
 }
 
