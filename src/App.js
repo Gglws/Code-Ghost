@@ -7,10 +7,10 @@ import FormFooter from "./FormFooter.js";
 import ProfileHighlights from "./ProfileHighlights.js";
 import PlaceholderSqlBox from "./PlaceholderSqlBox.js";
 
+import { motion, useScroll } from "framer-motion";
 // import Backend from "./testing_backend/Backend.js";
 // import Footer_testing from "./testing_backend/Footer_testing.js";
 
-import { motion, useScroll } from "framer-motion";
 
 
 //IMPORT SECTION END
@@ -26,7 +26,7 @@ function App() {
       />
       <Header />
       <div className="innerApp">
-        <Intro />
+        <Intro scroll={scrollYProgress}/>
         <ProfileHighlights />
         <PlaceholderSqlBox />
       </div>

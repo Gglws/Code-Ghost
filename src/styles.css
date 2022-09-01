@@ -20,12 +20,17 @@ main {
 .header {
   justify-content: center;
   background-color: rgb(36, 37, 41);
-  height: clamp(20px, 5vw, 40px);
+  height: 50px;
   display: flex;
   flex-direction: row;
   min-width: 100vw;
   font-family: Arial, Helvetica, sans-serif;
-  align-content:space-around;
+  align-items:center;
+}
+.CT{
+  padding-right: 20px;
+  height: 30px;
+  width: 30px;
 }
 .title{
   padding-right: 5%;
@@ -41,26 +46,25 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .introBox {
   display: flex;
-  flex-direction: row;
-  margin-top: 15px;
-  background-color: rgb(36, 37, 41);
-  border: 1px solid rgb(47, 48, 54);
+  flex-direction: column;
+  margin-top: 50px;
+  background-image: radial-gradient(rgb(36, 37, 41), rgba(36, 37, 41, 0.566), rgba(0, 0, 0, 0));
   border-radius: 10px;
-  height: clamp(50vw, auto, 800px);
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .introImage{
-  width: clamp(50px, 25%, 800px);
+ 
+  height: clamp(50%, auto, 800px);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .image{
