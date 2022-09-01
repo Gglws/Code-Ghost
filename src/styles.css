@@ -130,6 +130,7 @@ main {
 .xButton:hover,
 .submit:hover {
   background-color: #fff;
+  color: black;
 }
 
 .submit,
@@ -140,7 +141,7 @@ main {
   width: 50vh;
   margin-top: 1%;
   color: #d2d2d7;
-  border-radius: 30px;
+  border-radius: 5px;
   background: #1d1d1f;
 }
 
@@ -156,7 +157,7 @@ main {
   font-size: 15px;
   font-weight: 400;
   color: #d2d2d7;
-  border-radius: 30px;
+  border-radius: 5px;
   background: #1d1d1f;
   width: 49vh;
   margin-top: 1%;
@@ -184,11 +185,17 @@ textarea {
   background: purple;
   border-radius: 30px;
   background: rgb(2, 0, 36);
-  background: linear-gradient(
+  /* background: linear-gradient(
     25deg,
     rgba(2, 0, 36, 1) 0%,
     rgba(104, 9, 121, 1) 54%,
     rgba(91, 0, 255, 1) 100%
+  ); */
+  background-image: linear-gradient(
+    30deg,
+    #214079 1%,
+    #663a7e 55%,
+    #a82b7d 100%
   );
   overflow: hidden;
 }
@@ -201,6 +208,12 @@ textarea {
   font-weight: 600;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: rgb(239, 237, 237);
+}
+
+@media (max-width: 700px) {
+  .profilePicture {
+    display: none;
+  }
 }
 
 .profilePicture {
