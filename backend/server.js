@@ -37,13 +37,18 @@ app.post("/api/userAccounts", (req, res) => {
       });
   });
   //user verification
-  app.get("/api/userAccounts", (req, res) => {
+  app.post("/api/userSessions", (req, res) => {
     const { email, password } = req.body;
     pool.query('SELECT id FROM userAccounts WHERE email = $1 AND password = crypt($2, password)', [email, password]).then((data) => {
         if ((data.rows).length < 1) {
+            console.log('Invalid Email or Password.')
             return res.status(401).send("Invalid Email or Password.")
         }
+        const { id } = data.rows[0]
+        console.log(id);
+        pool.query('INSERT INTO userSessions (userID) VALUES ($1)', [id])
         res.send(data.rows);
+        console.log("signed in");
     });
 });
 

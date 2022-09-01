@@ -6,7 +6,7 @@ import "./styles.css";
 import FormFooter from "./FormFooter.js";
 import ProfileHighlights from "./ProfileHighlights.js";
 import PlaceholderSqlBox from "./PlaceholderSqlBox.js";
-
+import LoginForm from "./loginForm.js";
 // import Backend from "./testing_backend/Backend.js";
 // import Footer_testing from "./testing_backend/Footer_testing.js";
 
@@ -25,6 +25,7 @@ function App() {
         style={{ scaleX: scrollYProgress }}
       />
       <Header />
+      <LoginForm />
       <div className="innerApp">
         <Intro />
         <ProfileHighlights />
