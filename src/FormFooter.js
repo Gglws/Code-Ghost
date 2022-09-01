@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import $ from "jquery";
+import { motion } from "framer-motion";
 
 const FormFooter = () => {
   const [contactPressed, setContactPressed] = useState(false);
@@ -8,6 +9,7 @@ const FormFooter = () => {
     if (!contactPressed) {
       setContactPressed(true);
       $(".formFooter").css("height", "22%");
+      $("html, body").animate({ scrollTop: $(document).height() }, 1000);
     } else {
       setContactPressed(false);
       $(".formFooter").css("height", "5%");
@@ -29,7 +31,16 @@ const FormFooter = () => {
   return (
     <footer className="formFooter">
       {contactPressed ? (
-        <div className="formContainer">
+        <motion.div
+          className="formContainer"
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 1,
+            delay: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+        >
           <form
             className="form"
             onSubmit={(e) => {
@@ -39,7 +50,7 @@ const FormFooter = () => {
             // action="https://public.herotofu.com/v1/d7808b70-2894-11ed-a7a0-3f26160640a2"
             // method="post"
           >
-            <div>
+            <div className="labelContainer">
               <label className="formLabel">
                 Who would you like to contact?
               </label>
@@ -60,7 +71,7 @@ const FormFooter = () => {
               <input
                 className="email"
                 type="email"
-                placeholder="email@example.com"
+                placeholder=" email@example.com"
                 name="email"
                 required
               />
@@ -70,7 +81,7 @@ const FormFooter = () => {
               <input
                 className="subject"
                 type="text"
-                placeholder="Subject"
+                placeholder=" Subject"
                 name="subject"
                 required
               />
@@ -78,7 +89,7 @@ const FormFooter = () => {
             <div className="message">
               <textarea
                 className="message"
-                placeholder="Your message"
+                placeholder=" Your message"
                 name="body"
                 required
               ></textarea>
@@ -89,7 +100,7 @@ const FormFooter = () => {
               </button>
             </div>
           </form>
-        </div>
+        </motion.div>
       ) : (
         <div className="contactUs" onClick={showForm}>
           Contact Us!
