@@ -4,9 +4,10 @@ CREATE EXTENSION IF NOT EXISTS pgcrypto;
 
 CREATE TABLE memberInfo (
     id SERIAL,
-    member_name TEXT,
-    member_url TEXT,
-    member_description TEXT
+    name TEXT,
+    email TEXT,
+    subject TEXT,
+    message TEXT
 );
 
 CREATE TABLE userAccounts (
