@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 const Backend = () => {
     const [members, setMembers] = useState([]);
     useEffect(() => {
-            fetch("http://localhost:5000/api/member")
+            fetch("http://localhost:5001/api/member")
             .then((res) => {
                 return res.json();
             })
@@ -18,8 +18,10 @@ const Backend = () => {
                 return (
                     <ul key={member.id}>
                         <li>
-                            {member["member_name"]}
-                            <p>{member["member_url"]}</p>
+                            {member["name"]}
+                            <p>{member["email"]}</p>
+                            <p>{member["subject"]}</p>
+                            <p>{member["message"]}</p>
                         </li>
                     </ul>
                     )
