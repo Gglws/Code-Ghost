@@ -37,7 +37,7 @@ const FormFooter = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{
             duration: 1,
-            delay: 0.3,
+            delay: 0.4,
             ease: [0, 0.71, 0.2, 1.01],
           }}
         >
@@ -71,7 +71,7 @@ const FormFooter = () => {
               <input
                 className="email"
                 type="email"
-                placeholder=" email@example.com"
+                placeholder="email@example.com"
                 name="email"
                 required
               />
@@ -81,7 +81,7 @@ const FormFooter = () => {
               <input
                 className="subject"
                 type="text"
-                placeholder=" Subject"
+                placeholder="Subject"
                 name="subject"
                 required
               />
@@ -89,7 +89,7 @@ const FormFooter = () => {
             <div className="message">
               <textarea
                 className="message"
-                placeholder=" Your message"
+                placeholder="Your message"
                 name="body"
                 required
               ></textarea>
