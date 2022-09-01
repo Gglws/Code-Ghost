@@ -1,5 +1,6 @@
 DROP TABLE IF EXISTS memberInfo;
 DROP TABLE IF EXISTS userAccounts;
+DROP TABLE IF EXISTS userSessions;
 CREATE EXTENSION IF NOT EXISTS pgcrypto;
 
 CREATE TABLE memberInfo (
@@ -16,6 +17,10 @@ CREATE TABLE userAccounts (
     password TEXT NOT NULL,
     fullName TEXT NOT NULL,
     company TEXT
+);
+CREATE TABLE userSessions (
+    id SERIAL PRIMARY KEY,
+    userID INTEGER NOT NULL
 );
 
 INSERT INTO memberInfo (name, email, subject, message) VALUES ('Daeyeon', 'daeyeon@gmail.com', 'subject', 'message');
