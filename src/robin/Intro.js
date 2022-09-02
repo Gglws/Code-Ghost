@@ -3,26 +3,27 @@ import leon from "./leon.png";
 import link from "./link.png";
 import snake from "./snake.png";
 import shadow from "./shadow.png";
-import { motion, useScroll } from "framer-motion";
+
+import { motion } from "framer-motion";
+import CG from "./CG.PNG";
 
 function Intro(props) {
   const [scroller, setScroller] = useState(1);
   useEffect(
-      () =>
+    () =>
       props.scroll.onChange(() => {
-          let value = (1 - props.scroll.get() * 10);
-      setScroller(value);
+        setScroller(props.scroll.get());
       }),
     []
   );
-  console.log(props.scroll.get());
+  // console.log(props.scroll.get());
 
   return (
-    <div className="introBox">
-      <motion.div
-        style={{ opacity: (1 - props.scroll.get()*10) }}
-        className="introImage"
-      >
+    <motion.div
+      className="introBox"
+      style={{ opacity: 1 - props.scroll.get() * 2.5 }}
+    >
+      <div className="introImage">
         <motion.div
           initial={{ opacity: 0, x: "50vw" }}
           animate={{ opacity: 1, x: "0%" }}
@@ -51,9 +52,15 @@ function Intro(props) {
         >
           <img className="image" src={shadow} alt="shadow" />{" "}
         </motion.div>
-      </motion.div>
-      <div className="introText"> Intro Text Here</div>
-    </div>
+      </div>
+      <div className="introText">
+        <div className="codeGhosts">&#123;codeGhosts&#125;</div>
+        <div className="introCopy"><p>
+          Meet the codeGhosts. We are Software Engineers and Military Vets with
+          coding skills are so good, it's spooky.</p> <p className="textMid"> Frontend. Backend. FullStack.</p><p className="textEnd">You need it. We can do it... or we will binge read documentation and watch YouTube tutorials until we can.</p>
+        </div>
+      </div>
+    </motion.div>
   );
 }
 
