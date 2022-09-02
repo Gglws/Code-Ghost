@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
 import Header from "../robin/Header.js";
-
 import Intro from "../robin/Intro.js";
 import ProfileHighlights from "../ProfileHighlights.js";
 import PlaceholderSqlBox from "../PlaceholderSqlBox.js";
@@ -9,7 +7,6 @@ import { motion, useScroll } from "framer-motion";
 import LoginForm from "../LoginForm.js";
 import CG from "../robin/CG.PNG";
 import HeaderMenu from "../robin/HeaderMenu.js";
-
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -30,7 +27,7 @@ export default function Home() {
         <div className="innerApp">
           <Intro scroll={scrollYProgress} />
           <ProfileHighlights scroll={scrollYProgress} />
-          <PlaceholderSqlBox scroll={scrollYProgress}/>
+          <PlaceholderSqlBox scroll={scrollYProgress} />
         </div>
       </div>
       <LoginForm />
