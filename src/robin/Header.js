@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderMenu from "./HeaderMenu.js";
+// import HeaderMenu from "./HeaderMenu.js";
 import { motion } from "framer-motion";
 // import Form from "../Form.js";
 import CT from './CT.PNG'
@@ -29,7 +29,6 @@ function Header() {
           Code Ghosts
         </motion.div>
       </motion.div>
-      <HeaderMenu />
     </div>
   );
 }

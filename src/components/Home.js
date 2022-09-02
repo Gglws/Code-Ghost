@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Header from "../robin/Header.js";
+import HeaderMenu from "../robin/HeaderMenu.js"
 
 import Intro from '../robin/Intro.js';
 import ProfileHighlights from '../ProfileHighlights.js';
@@ -13,15 +14,7 @@ export default function Home() {
     return (
         <section>
             <Header />
-            <h2>TEAM BIBBLE</h2>
-            <ul>
-                <li>
-                    <Link to='/about' className='nav-btn'>Go to About</Link>
-                </li>
-                <li>
-                    <Link to='/login' className='nav-btn'>Go to Login</Link>
-                </li>        
-            </ul>
+            <HeaderMenu />
             <div>
                 <div className="App">
                     <motion.div className="progress-bar" style={{ scaleX: scrollYProgress }}/>
