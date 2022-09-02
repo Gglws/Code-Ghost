@@ -58,8 +58,8 @@ function Intro(props) {
       <div className="introText">
         <div className="codeGhosts">&#123;codeGhosts&#125;</div>
         <div className="introCopy"><p>
-          Meet the codeGhosts. We are Software Engineers and Military Vets with
-          coding skills are so good, it's spooky.</p> <p className="textMid"> Frontend. Backend. FullStack.</p><p className="textEnd">You need it. We can do it... or we will binge read documentation and watch YouTube tutorials until we can.</p>
+          Meet the codeGhosts. We are Software Engineers and Military Veterans with
+          coding skills so good<br/> ...it's spooky.</p> <p className="textMid"> Frontend. Backend. FullStack.</p><p className="textEnd">You need it. We can do it... or we will binge read documentation and watch YouTube tutorials until we can.</p>
         </div>
       </div>
     </motion.div>

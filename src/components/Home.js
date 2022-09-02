@@ -8,12 +8,14 @@ import FormFooter from "../FormFooter.js";
 import { motion, useScroll } from "framer-motion";
 import LoginForm from "../LoginForm.js";
 import CG from "../robin/CG.PNG";
+import HeaderMenu from "../robin/HeaderMenu.js";
 
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
   return (
     <section>
+    <HeaderMenu/>
       <Header />
       <motion.div style={{ opacity: scrollYProgress }}>
         <img className="cgBig" src={CG} alt="CG" />
@@ -41,7 +43,7 @@ export default function Home() {
         <div className="innerApp">
           <Intro scroll={scrollYProgress} />
           <ProfileHighlights scroll={scrollYProgress} />
-          <PlaceholderSqlBox />
+          <PlaceholderSqlBox scroll={scrollYProgress}/>
         </div>
       </div>
       <LoginForm />
