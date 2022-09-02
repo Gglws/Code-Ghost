@@ -3,7 +3,7 @@ import profilePic from "./images.jpg";
 
 function Gage() {
   return (
-    <div className="profile">
+    <div className="gageProfile">
       <div className="profileHeader"> Gage </div>
       <div className="profileContent">Blah blah blah blah blah blah</div>
       <img

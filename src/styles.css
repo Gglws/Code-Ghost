@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Lobster';
+  src: local('Lobster'), url(./fonts/Lobster-Regular.ttf) format('truetype');
+}
+
+
+
 body,
 html,
 main {
@@ -13,15 +20,19 @@ main {
   top: 0;
   left: 0;
   right: 0;
-  height: 5px;
+  height: 3px;
+  z-index: 1;
   background: white;
   transform-origin: 0%;
 }
 .header {
+  top: 0px;
+  position: fixed;
   justify-content: center;
   background-color: rgb(36, 37, 41);
-  height: 50px;
+  height: 53px;
   display: flex;
+  z-index: 1;
   flex-direction: row;
   min-width: 100vw;
   font-family: Arial, Helvetica, sans-serif;
@@ -29,7 +40,7 @@ main {
   position: fixed;  /* stay on the top */
   top: 50px;        /* stay on the top */
 }
-.CT{
+.CG {
   padding-right: 20px;
   height: 30px;
   width: 30px;
@@ -38,9 +49,7 @@ main {
   padding-right: 5%;
 }
 .login {
-}
-.headerMenu {
-  padding-left: 5%;
+  background-color: #214079;
 }
 
 .innerApp {
@@ -66,13 +75,51 @@ main {
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: baseline;
+}
+
+.introText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introCopy{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  width: 70%;
+  color: rgba(255, 255, 255, 0.57);
+  text-align: center;
+}
+
+.textMid{
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.textEnd{
+  font-size: 23px;
+}
+
+.codeGhosts{
+  font-family: Lobster;
+  font-size: 150px;
+  background: -webkit-radial-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .image {
   height: auto;
   max-width: 100%;
+}
+
+.cgBig{
+  position: fixed;
+  opacity: .5;
+  bottom: 0;
+  height: auto;
+  max-width: 50%;
 }
 
 .sqlBox {
@@ -184,28 +231,32 @@ textarea {
   width: 70%;
 }
 
-.profile {
+.daeyeonProfile,
+.gageProfile,
+.jeremyProfile,
+.robinProfile {
   position: relative;
   margin-top: 15px;
   margin-bottom: 15px;
   width: 100%;
   height: 400px;
-  background: purple;
-  border-radius: 30px;
   background: rgb(2, 0, 36);
-  /* background: linear-gradient(
-    25deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(104, 9, 121, 1) 54%,
-    rgba(91, 0, 255, 1) 100%
-  ); */
+  border-radius: 30px;
+}
+
+.daeyeonProfile {
   background-image: linear-gradient(
     30deg,
     #214079 1%,
-    #663a7e 55%,
+    #663a7e 1%,
     #a82b7d 100%
   );
   overflow: hidden;
+}
+
+.gageProfile {
+  background-image: url(./assets/coding.gif);
+  opacity: 0.4;
 }
 
 .profileHeader {
