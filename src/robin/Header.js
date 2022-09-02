@@ -2,7 +2,7 @@ import React from "react";
 import HeaderMenu from "./HeaderMenu.js";
 import { motion } from "framer-motion";
 // import Form from "../Form.js";
-import CT from './CT.PNG'
+import CG from './CG.PNG'
 
 function Header() {
   return (
@@ -11,9 +11,9 @@ function Header() {
         whileHover={{ scale: [null, 1.3, 1.2] }}
         transition={{ duration: 0.3 }}
       >
-        <img className="CT" src={CT} alt="CT" />
+        <img className="CG" src={CG} alt="CG" />
       </motion.div>
-      <motion.div
+      {/* <motion.div
         className="title"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -25,10 +25,8 @@ function Header() {
         <motion.div
           whileHover={{ scale: [null, 1.3, 1.2] }}
           transition={{ duration: 0.3 }}
-        >
-          Code Ghosts
-        </motion.div>
-      </motion.div>
+        ></motion.div>
+      </motion.div> */}
       <HeaderMenu />
     </div>
   );
