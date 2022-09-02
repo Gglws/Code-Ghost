@@ -25,9 +25,9 @@ main {
   flex-direction: row;
   min-width: 100vw;
   font-family: Arial, Helvetica, sans-serif;
-  align-items:center;
+  align-items: center;
 }
-.CT{
+.CT {
   padding-right: 20px;
   height: 30px;
   width: 30px;
@@ -51,15 +51,17 @@ main {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  background-image: radial-gradient(rgb(36, 37, 41), rgba(36, 37, 41, 0.566), rgba(0, 0, 0, 0));
+  background-image: radial-gradient(
+    rgb(36, 37, 41),
+    rgba(36, 37, 41, 0.566),
+    rgba(0, 0, 0, 0)
+  );
   border-radius: 10px;
   padding-left: 15%;
   padding-right: 15%;
 }
 
-
-.introImage{
- 
+.introImage {
   height: clamp(50%, auto, 800px);
 
   display: flex;
@@ -182,28 +184,32 @@ textarea {
   width: 70%;
 }
 
-.profile {
+.daeyeonProfile,
+.gageProfile,
+.jeremyProfile,
+.robinProfile {
   position: relative;
   margin-top: 15px;
   margin-bottom: 15px;
   width: 100%;
   height: 400px;
-  background: purple;
-  border-radius: 30px;
   background: rgb(2, 0, 36);
-  /* background: linear-gradient(
-    25deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(104, 9, 121, 1) 54%,
-    rgba(91, 0, 255, 1) 100%
-  ); */
+  border-radius: 30px;
+}
+
+.daeyeonProfile {
   background-image: linear-gradient(
     30deg,
     #214079 1%,
-    #663a7e 55%,
+    #663a7e 1%,
     #a82b7d 100%
   );
   overflow: hidden;
+}
+
+.gageProfile {
+  background-image: url(./assets/coding.gif);
+  opacity: 0.4;
 }
 
 .profileHeader {

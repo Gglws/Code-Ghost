@@ -8,19 +8,19 @@ import { motion, useScroll } from "framer-motion";
 function Intro(props) {
   const [scroller, setScroller] = useState(1);
   useEffect(
-      () =>
+    () =>
       props.scroll.onChange(() => {
-          let value = (1 - props.scroll.get() * 10);
-      setScroller(value);
+        let value = 1 - props.scroll.get() * 10;
+        setScroller(value);
       }),
     []
   );
-  console.log(props.scroll.get());
+  // console.log(props.scroll.get());
 
   return (
     <div className="introBox">
       <motion.div
-        style={{ opacity: (1 - props.scroll.get()*10) }}
+        style={{ opacity: 1 - props.scroll.get() * 10 }}
         className="introImage"
       >
         <motion.div
