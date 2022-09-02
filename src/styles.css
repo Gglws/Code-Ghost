@@ -3,8 +3,6 @@
   src: local('Lobster'), url(./fonts/Lobster-Regular.ttf) format('truetype');
 }
 
-
-
 body,
 html,
 main {
@@ -44,6 +42,7 @@ main {
   padding-right: 20px;
   height: 30px;
   width: 30px;
+  cursor: pointer;
 }
 .title {
   padding-right: 5%;
@@ -103,7 +102,7 @@ main {
 
 .codeGhosts{
   font-family: Lobster;
-  font-size: 150px;
+  font-size: 160px;
   background: -webkit-radial-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -244,6 +243,10 @@ textarea {
   border-radius: 30px;
 }
 
+.robinProfile{
+  
+}
+
 .daeyeonProfile {
   background-image: linear-gradient(
     30deg,
@@ -271,12 +274,12 @@ textarea {
 }
 
 .profileHeader {
+
   position: relative;
   width: fit-content;
   height: fit-content;
   padding: 30px;
   font-size: 21px;
-  font-weight: 600;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: rgb(239, 237, 237);
 }
@@ -300,8 +303,36 @@ textarea {
 }
 
 .profileContent {
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
   position: absolute;
+
   margin-left: 30px;
-  width: 125vh;
-  height: 48vh;
+  margin-right: 30px;
+  text-align: justify;
+  font-size: 30px;
+}
+
+/*  */
+.switch {
+  width: 160px;
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 50px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.switch[data-isOn="true"] {
+  justify-content: flex-end;
+}
+
+.handle {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 40px;
 }
