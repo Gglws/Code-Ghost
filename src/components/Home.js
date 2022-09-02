@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Header from "../robin/Header.js";
+import HeaderMenu from "../robin/HeaderMenu.js"
 
 import Intro from "../robin/Intro.js";
 import ProfileHighlights from "../ProfileHighlights.js";
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <section>
       <Header />
+      <HeaderMenu />
       <motion.div style={{ opacity: scrollYProgress }}>
         <img className="cgBig" src={CG} alt="CG" />
       </motion.div>
