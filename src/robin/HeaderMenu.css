@@ -1,0 +1,31 @@
+.page-nav-container {
+    display: flex;
+    justify-content:flex-end;
+    background-color: rgb(44, 44, 44);
+    height: 50px;
+}
+.page-nav-btn {
+    display: flex;
+    justify-content: left;
+    padding-left: 50px;
+    font-size: 30px;
+    color: azure;
+    padding-right: 50px;
+}
+
+.nav-btn-about {
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.nav-btn-login {
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+a:-webkit-any-link {
+    color:aliceblue;
+}
+

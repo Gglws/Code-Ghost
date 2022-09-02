@@ -3,7 +3,7 @@ import profilePic from "./images.jpg";
 
 function Jeremy() {
   return (
-    <div className="profile">
+    <div className="jeremyProfile">
       <div className="profileHeader"> Jeremy </div>
       <div className="profileContent">Blah blah blah blah blah blah</div>
       <img
