@@ -3,9 +3,13 @@ import pg from "pg";
 import { readFile } from "fs/promises";
 import dotenv from "dotenv";
 import cors from 'cors';
-
+import session from "express-session";
+import ConnectPgSimple from "connect-pg-simple";
 dotenv.config();
-const PORT = 5001;
+
+const pgSession = new ConnectPgSimple(session);
+
+const PORT = process.env.PORT;
 // const { DATABASE_URL, NODE_ENV, PORT} = process.env;
 
 const app = express();
@@ -14,8 +18,8 @@ app.use(express.static('/..public'));
 app.use(cors());
 
 const pool = new pg.Pool({
-    database: 'fec'
-    // connectionString: process.env.DATABASE_URL,
+    // database: 'fec'
+    connectionString: process.env.DATABASE_URL,
     // ssl: {
     //     rejectUnauthorized: false
     // }
@@ -39,16 +43,15 @@ app.post("/api/userAccounts", (req, res) => {
   //user verification
   app.post("/api/userSessions", (req, res) => {
     const { email, password } = req.body;
-    pool.query('SELECT id FROM userAccounts WHERE email = $1 AND password = crypt($2, password)', [email, password]).then((data) => {
+    pool.query('SELECT id, fullname FROM userAccounts WHERE email = $1 AND password = crypt($2, password)', [email, password]).then((data) => {
         if ((data.rows).length < 1) {
             console.log('Invalid Email or Password.')
             return res.status(401).send("Invalid Email or Password.")
         }
-        const { id } = data.rows[0]
-        console.log(id);
-        pool.query('INSERT INTO userSessions (userID) VALUES ($1)', [id])
+        const { id, fullName } = data.rows[0]
+        pool.query('INSERT INTO userSessions (userID) VALUES ($1)', [id, fullName])
+        console.log(data.rows);
         res.send(data.rows);
-        console.log("signed in");
     });
 });
 
@@ -78,6 +81,19 @@ app.post("/api/member", (req, res) => {
         }
     })
 });
+
+//here
+app.use(session({
+    store: new pgSession({
+        pool : pool
+      // Insert connect-pg-simple options here
+    }),
+    secret: 'something', //process.env.SESSION_SECRET
+    resave: false,
+    saveUninitialized: true,
+    cookie: { maxAge: 30 * 24 * 60 * 60 * 1000 } // 30 days
+    // Insert express-session options here
+  }));
 
 app.use((err, req, res, next)=> {
     res.sendStatus(500);

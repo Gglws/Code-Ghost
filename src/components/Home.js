@@ -6,7 +6,6 @@ import ProfileHighlights from '../ProfileHighlights.js';
 import PlaceholderSqlBox from '../PlaceholderSqlBox.js';
 import FormFooter from '../FormFooter.js';
 import { motion, useScroll } from "framer-motion";
-import LoginForm from '../LoginForm.js';
 
 export default function Home() {
     const { scrollYProgress } = useScroll();
@@ -32,7 +31,6 @@ export default function Home() {
                     <PlaceholderSqlBox />
                 </div>
             </div> 
-            <LoginForm />
             <FormFooter />
         </section>
     )
