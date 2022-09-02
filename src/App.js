@@ -20,24 +20,6 @@ function App() {
           <Route path="/login" element={<Login />}/>
         </Routes>
     </Router>
-
-    // <div className="App">
-    //   <motion.div
-    //     className="progress-bar"
-    //     style={{ scaleX: scrollYProgress }}
-    //   />
-    //   <Header />
-    //   <LoginForm />
-    //   <div className="innerApp">
-    //     <Intro scroll={scrollYProgress}/>
-    //     <ProfileHighlights />
-    //     <PlaceholderSqlBox />
-    //   </div>
-    //   <FormFooter />
-    //   {/* <Backend /> */}
-    //   {/* <Footer_testing /> */}
-    // </div>
-
   );
 }
 
