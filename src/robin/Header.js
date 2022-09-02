@@ -2,7 +2,7 @@ import React from "react";
 // import HeaderMenu from "./HeaderMenu.js";
 import { motion } from "framer-motion";
 // import Form from "../Form.js";
-import CG from './CG.PNG'
+import CG from "./CG.PNG";
 
 function Header() {
   return (
@@ -13,7 +13,6 @@ function Header() {
       >
         <img className="CG" src={CG} alt="CG" />
       </motion.div>
-      <HeaderMenu />
     </div>
   );
 }
