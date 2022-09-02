@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Header from "../robin/Header.js";
-import HeaderMenu from "../robin/HeaderMenu.js"
 
 import Intro from "../robin/Intro.js";
 import ProfileHighlights from "../ProfileHighlights.js";
@@ -16,25 +15,11 @@ export default function Home() {
   const { scrollYProgress } = useScroll();
   return (
     <section>
-    <HeaderMenu/>
       <Header />
       <HeaderMenu />
       <motion.div style={{ opacity: scrollYProgress }}>
         <img className="cgBig" src={CG} alt="CG" />
       </motion.div>
-      <h2>TEAM BIBBLE</h2>
-      <ul>
-        <li>
-          <Link to="/about" className="nav-btn">
-            Go to About
-          </Link>
-        </li>
-        <li>
-          <Link to="/login" className="nav-btn">
-            Go to Login
-          </Link>
-        </li>
-      </ul>
       <div>
         <div className="App">
           <motion.div
