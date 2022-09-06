@@ -1,1 +1,1 @@
-SELECT * FROM userSessions;
+SELECT id, fullname FROM userAccounts;

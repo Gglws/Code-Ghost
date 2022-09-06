@@ -12,35 +12,29 @@ function LoginForm() {
   const updatePassword = (event) => {
     setPassword(event.target.value);
   };
-  const updateLogin = () => {
-    setLogin(true);
-  };
+//   const updateLogin = () => {
+//     setLogin(true);
+//   };
 //   const updateLogout = () => {
 //     setLogin(false);
 //   };
   function HandleSubmit(e) {
     e.preventDefault();
-    axios.post('/api/userSessions', {
-        // url: "api/userSessions", //this needs to be replaced in production
-        // method: "POST",
-        data: { email, password }
-      }).then(
-        updateLogin())
-        .then(
-        console.log("login value", login),
-        setEmail(""),
-        setPassword(""));
-    // axios({
-    //   url: "/api/userSessions", //this needs to be replaced in production
-    //   method: "POST",
-    //   data: { email, password }
-    // }).then(
-    //         updateLogin())
-    //         .then(
-    //         console.log("login value", login),
-    //         setEmail(""),
-    //         setPassword(""))
-  }
+    axios({
+      url: "/userSessions", //this needs to be replaced in production
+      method: "POST",
+      data: { email, password },
+      headers: {
+        'Content-Type': 'application/json',
+    },
+    })
+    // .then(
+    //         setLogin(true),
+    //         console.log(login),
+    //         window.location.href = "/"
+            // localStorage.setItem("UserName", ));
+  //)
+}
   return (
     <>
       <p>login Form temp</p>

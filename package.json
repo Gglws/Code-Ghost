@@ -7,10 +7,14 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
+    "connect-pg-simple": "^7.0.0",
+    "connect-session-sequelize": "^7.1.5",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "express-session": "^1.17.3",
     "framer-motion": "^7.2.1",
+    "http-proxy-middleware": "^2.0.6",
     "jquery": "^3.6.1",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.19",
@@ -23,7 +27,8 @@
   },
   "type": "module",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node backend/server.js",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -45,6 +50,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ],
-    "proxy": "http://localhost:5001"
+    "proxy": "http://localhost:5001/"
   }
 }

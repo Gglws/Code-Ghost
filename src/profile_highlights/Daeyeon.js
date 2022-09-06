@@ -20,18 +20,9 @@ function Daeyeon(props) {
         "background-image": `linear-gradient(30deg,#214079 1%, #663a7e ${props.scroll.get()*200}%, #a82b7d 100%)`,
       
     });
+
   }, []));
-  // props.scroll.onChange(() => {
-  //   count++;
 
-  //   // console.log(props.scroll);
-  //   // $(".profile").css({
-  //   //   "background-image": "linear-gradient(30, rgba(255, 255, 255)",
-  //   // });
-  //   // $(".profile").css({ height: `${newCount}` });
-
-  //   // console.log(count);
-  // });
 
   return (
     <motion.div className="daeyeonProfile">
