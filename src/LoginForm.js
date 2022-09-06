@@ -21,7 +21,7 @@ function LoginForm() {
   function HandleSubmit(e) {
     e.preventDefault();
     axios({
-      url: "http://localhost:5001/api/userSessions", //this needs to be replaced in production
+      url: "/api/userSessions", //this needs to be replaced in production
       method: "POST",
       data: { email, password }
     }).then(

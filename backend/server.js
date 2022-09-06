@@ -14,7 +14,7 @@ const PORT = process.env.PORT;
 
 const app = express();
 app.use(express.json());
-app.use(express.static("../build"));
+app.use(express.static("build"));
 app.use(cors());
 
 const pool = new pg.Pool({
@@ -64,11 +64,11 @@ app.post("/api/userSessions", (req, res) => {
     });
 });
 
-app.get("/api", (req, res) => {
-  readFile("public/index.html", "utf-8").then((string) => {
-    res.send(string);
-  });
-});
+// app.get("/api", (req, res) => {
+//   readFile("public/index.html", "utf-8").then((string) => {
+//     res.send(string);
+//   });
+// });
 
 app.get("/api/member", (req, res) => {
   pool.query("SELECT * FROM memberInfo").then((data) => {
