@@ -14,7 +14,7 @@ const PORT = process.env.PORT;
 
 const app = express();
 app.use(express.json());
-app.use(express.static("../build"));
+app.use(express.static("build"));
 app.use(cors());
 
 const pool = new pg.Pool({
@@ -54,21 +54,21 @@ app.post("/api/userSessions", (req, res) => {
         console.log("Invalid Email or Password.");
         return res.status(401).send("Invalid Email or Password.");
       }
-      const { id, fullName } = data.rows[0];
-      pool.query("INSERT INTO userSessions (userID) VALUES ($1)", [
-        id,
-        fullName,
-      ]);
-      console.log(data.rows);
+    //   const { id, fullName } = data.rows[0];
+    //   pool.query("INSERT INTO userSessions (userID) VALUES ($1)", [
+    //     id,
+    //     fullName,
+    //   ]);
+    //   console.log(data.rows);
       res.send(data.rows);
     });
 });
 
-app.get("/api", (req, res) => {
-  readFile("public/index.html", "utf-8").then((string) => {
-    res.send(string);
-  });
-});
+// app.get("/api", (req, res) => {
+//   readFile("public/index.html", "utf-8").then((string) => {
+//     res.send(string);
+//   });
+// });
 
 app.get("/api/member", (req, res) => {
   pool.query("SELECT * FROM memberInfo").then((data) => {
