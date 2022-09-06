@@ -37,17 +37,6 @@ function Daeyeon(props) {
       setScroller(count);
     });
   }, [props.scroll, count]);
-  // props.scroll.onChange(() => {
-  //   count++;
-
-  //   // console.log(props.scroll);
-  //   // $(".profile").css({
-  //   //   "background-image": "linear-gradient(30, rgba(255, 255, 255)",
-  //   // });
-  //   // $(".profile").css({ height: `${newCount}` });
-
-  //   // console.log(count);
-  // });
 
   return (
     <motion.div className="daeyeonProfile">
