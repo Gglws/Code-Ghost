@@ -1,20 +1,29 @@
 import React from "react";
-import profilePic from "./images.jpg";
+import hJeremy from "../robin/hJeremy.PNG";
 
 function Jeremy() {
+
   return (
     <div className="jeremyProfile">
-      <div className="profileHeader"> Jeremy </div>
-      <div className="profileContent">Blah blah blah blah blah blah</div>
+      <div className="profileHeader"> Jeremy  - 4 years U.S. Air Force</div>
+      <div className="profileUH">
       <img
-        src={profilePic}
-        className="profilePicture"
+        src={hJeremy}
+        className="hJeremy"
         alt="Profile Pic"
         width="500"
         height="500"
       />
+  <div className="profileContent">
+    Backend Barbarian
+    <div className="profileText">
+    Jeremy is the bomb.
+    </div>
+  </div>
+    </div>
     </div>
   );
+
 }
 
 export default Jeremy;
