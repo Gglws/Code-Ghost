@@ -21,15 +21,20 @@ function LoginForm() {
   function HandleSubmit(e) {
     e.preventDefault();
     axios({
-      url: "/api/userSessions", //this needs to be replaced in production
+      url: "/userSessions", //this needs to be replaced in production
       method: "POST",
-      data: { email, password }
-    }).then(
-            setLogin(true),
-            console.log(login),
-            window.location.href = "http://localhost:5003/",
-            localStorage.setItem("UserName", ));
-  }
+      data: { email, password },
+      headers: {
+        'Content-Type': 'application/json',
+    },
+    })
+    // .then(
+    //         setLogin(true),
+    //         console.log(login),
+    //         window.location.href = "/"
+            // localStorage.setItem("UserName", ));
+  //)
+}
   return (
     <>
       <p>login Form temp</p>

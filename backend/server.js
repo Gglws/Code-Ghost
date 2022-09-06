@@ -54,12 +54,12 @@ app.post("/api/userSessions", (req, res) => {
         console.log("Invalid Email or Password.");
         return res.status(401).send("Invalid Email or Password.");
       }
-      const { id, fullName } = data.rows[0];
-      pool.query("INSERT INTO userSessions (userID) VALUES ($1)", [
-        id,
-        fullName,
-      ]);
-      console.log(data.rows);
+    //   const { id, fullName } = data.rows[0];
+    //   pool.query("INSERT INTO userSessions (userID) VALUES ($1)", [
+    //     id,
+    //     fullName,
+    //   ]);
+    //   console.log(data.rows);
       res.send(data.rows);
     });
 });
