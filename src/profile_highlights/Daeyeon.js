@@ -10,33 +10,19 @@ import {
 } from "framer-motion";
 
 function Daeyeon(props) {
-  const [scroller, setScroller] = useState(0);
+  const [scroller, setScroller] = useState(1);
 
-  let count = 0;
-  let count1 = 1;
-  let count2 = 1;
-  let count3 = 100;
-  let tracker = 0;
-
-  useEffect(() => {
-    props.scroll.onChange(() => {
-      count++;
-
-      //change to use scroll y progress
-      if (props.scroll.get() > tracker) {
-        count2 += 1;
-      } else if (props.scroll.get() < tracker) {
-        count2 -= 1;
-      }
-
+  useEffect(
+    () =>
+      props.scroll.onChange(() => {
+        setScroller(props.scroll.get());
       $(".daeyeonProfile").css({
-        "background-image": `linear-gradient(30deg,#214079 1%, #663a7e ${count2}%, #a82b7d 100%)`,
-      });
-
-      tracker = props.scroll.get();
-      setScroller(count);
+        "background-image": `linear-gradient(30deg,#214079 1%, #663a7e ${props.scroll.get()*200}%, #a82b7d 100%)`,
+      
     });
-  }, [props.scroll, count]);
+
+  }, []));
+
 
   return (
     <motion.div className="daeyeonProfile">

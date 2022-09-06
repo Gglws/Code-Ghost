@@ -1,8 +1,10 @@
 import { React, useEffect, useState } from "react";
-import leon from "./leon.png";
-import link from "./link.png";
-import snake from "./snake.png";
-import shadow from "./shadow.png";
+
+import gRobin from "./gRobin.PNG";
+import gDaeyeon from "./gDaeyeon.PNG";
+import gJeremy from "./gJeremy.PNG";
+import gGage from "./gGage.PNG";
+
 import $ from "jquery";
 
 import { motion } from "framer-motion";
@@ -41,28 +43,28 @@ function Intro(props) {
           animate={{ opacity: 1, x: "0%" }}
           transition={{ duration: 0.5 }}
         >
-          <img className="image" src={leon} alt="leon" />
+          <img className="image gRobin" src={gRobin} alt="gRobin" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: "50vw" }}
           animate={{ opacity: 1, x: "0%" }}
           transition={{ duration: 1 }}
         >
-          <img className="image" src={link} alt="link" />{" "}
+          <img className="image gDaeyeon" src={gDaeyeon} alt="gDaeyeon" />{" "}
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: "-50vw" }}
           animate={{ opacity: 1, x: "0%" }}
           transition={{ duration: 1.5 }}
         >
-          <img className="image" src={snake} alt="snake" />{" "}
+          <img className="image gJeremy" src={gJeremy} alt="gJeremy" />{" "}
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: "-50vw" }}
           animate={{ opacity: 1, x: "0%" }}
           transition={{ duration: 2 }}
         >
-          <img className="image" src={shadow} alt="shadow" />{" "}
+          <img className="image gGage" src={gGage} alt="gGage" />{" "}
         </motion.div>
       </div>
       <div className="introText">
