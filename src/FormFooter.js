@@ -19,6 +19,7 @@ const FormFooter = () => {
   let submitForm = () => {
     let messageObj = {};
     messageObj.name = $('select[class="select"]').val();
+    console.log(messageObj.name);
     messageObj.email = $('input[class="email"]').val();
     messageObj.subject = $('input[class="subject"]').val();
     messageObj.message = $('textarea[class="message"]').val();
@@ -26,6 +27,24 @@ const FormFooter = () => {
     console.log(messageObj);
 
     window.alert("Message sent to " + messageObj.name);
+    //FETCH POST :START
+    fetch("http://localhost:5000/api/member", {
+      mode: "cors",
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        description: messageObj,
+        name: messageObj.name,
+        email: messageObj.email,
+        subject: messageObj.subject,
+        message: messageObj.message,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
+    // FETCH POST :END
   };
 
   return (
