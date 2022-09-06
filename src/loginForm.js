@@ -27,7 +27,8 @@ function LoginForm() {
     }).then(
             setLogin(true),
             console.log(login),
-            window.location.href = "http://localhost:5003/");
+            window.location.href = "http://localhost:5003/",
+            localStorage.setItem("UserName", ));
   }
   return (
     <>
