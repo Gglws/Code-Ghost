@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import $ from "jquery";
+
 import Daeyeon from "./profile_highlights/Daeyeon.js";
 import Gage from "./profile_highlights/Gage.js";
 import Jeremy from "./profile_highlights/Jeremy.js";
