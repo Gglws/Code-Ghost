@@ -9,8 +9,8 @@ dotenv.config();
 
 const pgSession = new ConnectPgSimple(session);
 
-const PORT = process.env.PORT;
-// const { DATABASE_URL, NODE_ENV, PORT} = process.env;
+// const PORT = process.env.PORT || 5001;
+const { DATABASE_URL, NODE_ENV, PORT} = process.env;
 
 const app = express();
 app.use(express.json());
