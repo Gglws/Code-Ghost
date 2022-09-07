@@ -5,13 +5,9 @@
 
 @font-face {
   font-family: "San Francisco";
-  src: url(./fonts/SFPro/TrueType/SFProDisplay-Semibold.ttf) format("truetype");
+  src: local("San Francisco"),
+    url(./fonts/SFPro/TrueType/SFProDisplay-Semibold.ttf) format("truetype");
 }
-@font-face {
-font-family: 'PressStart2P';
-src: local('PressStart2P'), url(./fonts/PressStart2P-Regular.ttf) format('truetype');
-}
-
 
 body,
 html,
@@ -23,6 +19,7 @@ main {
   width: 100%;
   margin: 0;
 }
+
 .progress-bar {
   position: fixed;
   top: 0;
@@ -33,6 +30,7 @@ main {
   background: white;
   transform-origin: 0%;
 }
+
 .header {
   top: 50px;
   position: fixed;
@@ -43,19 +41,21 @@ main {
   z-index: 1;
   flex-direction: row;
   min-width: 100vw;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: San Francisco;
   align-items: center;
-  /* position: fixed; stay on the top */
 }
+
 .CG {
   padding-right: 20px;
   height: 30px;
   width: 30px;
   cursor: pointer;
 }
+
 .title {
   padding-right: 5%;
 }
+
 .login {
   background-color: #214079;
 }
@@ -69,26 +69,19 @@ main {
 .introBox {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
   background-image: radial-gradient(
     rgb(36, 37, 41),
     rgba(36, 37, 41, 0.566),
     rgba(0, 0, 0, 0)
   );
-  border-radius: 10px;
-  padding-left: 15%;
-  padding-right: 15%;
   padding-top: 100px;
 }
 
-
-
-.introImage{
-  /* height: clamp(50%, auto, 800px); */
-
+.introImage {
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  padding-top: 100px;
 }
 
 .introText {
@@ -98,7 +91,8 @@ main {
 }
 
 .introCopy {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
   font-size: 23px;
   width: 70%;
   color: rgba(255, 255, 255, 0.57);
@@ -107,17 +101,14 @@ main {
 
 .textMid {
   font-size: 30px;
-  color: rgba(255, 255, 255, 0.82);
-}
-
-.textEnd {
-  font-size: 23px;
+  color: rgb(255, 255, 255);
+  padding-top: 70px;
 }
 
 .codeGhosts {
   font-family: Lobster;
   font-size: 160px;
-  background: -webkit-radial-gradient(#eee, #333);
+  background: -webkit-radial-gradient(rgb(255, 255, 255), #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -129,21 +120,29 @@ main {
   padding: -20%;
 }
 
-.gRobin{
-  transform: translate(20%, 0%);
+.gRobin {
+  transform: translate(30%, 0%);
 }
 
-.gDaeyeon{
+.gDaeyeon {
   transform: translate(10%, 0%);
 }
 
-
-.gJeremy{
+.gJeremy {
   transform: translate(-10%, 0%);
 }
 
-.gGage{
+.gGage {
   transform: translate(-20%, 0%);
+}
+
+.gJeremy {
+  transform: translate(-5%, 0%);
+  scale: 1.1;
+}
+
+.gGage {
+  transform: translate(-30%, 0%);
 }
 
 .cgBig {
@@ -158,9 +157,11 @@ main {
   background: #1d1d1f;
   justify-content: center;
   contain: content;
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, 0%);
+  max-width: 1200px;
+  transition: 0.3s;
   height: auto;
   border-radius: 30px;
 }
@@ -178,52 +179,71 @@ main {
 }
 
 .sqlBoxTitleText {
+  margin-top: 10%;
   color: #f5f5f7;
   font-size: 40px;
   line-height: 1.08349;
   letter-spacing: -0.003em;
   font-family: "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
 }
 
 .sqlSubBoxContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 700px;
-  margin-bottom: 10%;
+  height: 80vh;
+  margin-bottom: 3%;
+  overflow: scroll;
 }
 
 .sqlSubBox {
-  width: 22%;
+  width: 30vh;
   height: 100%;
-  /* border: 1px solid white; */
+}
+
+.sqlSubBoxPic {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+  width: 70%;
+  max-width: 1200px;
 }
 
 .sqlSubBoxPic {
   margin: 5%;
   width: 90%;
-  /* border-radius: 50%; */
   border-radius: 30px;
   overflow: hidden;
 }
 
 .sqlBoxName {
   font-size: 21px;
-  margin: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   width: 90%;
-  /* text-align: center; */
   color: #f5f5f7;
   font-family: "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 p.bulletPoint {
-  /* text-align: center; */
-  margin: 5%;
+  font-size: 14px;
+  color: #f5f5f7;
+  font-family: "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   width: 90%;
 }
 
 a.button {
-  margin: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   align-items: center;
   font-size: 12px;
   color: #f5f5f7;
@@ -257,7 +277,7 @@ a:visited {
   width: 100%;
   background: #1d1d1f;
   color: #d2d2d7;
-  font: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
   font-size: 15px;
   font-weight: 400;
   position: relative;
@@ -279,31 +299,41 @@ a:visited {
 
 .form {
   display: flex;
+  width: 60vh;
   flex-direction: column;
+  justify-content: center;
   margin-top: 2%;
+  margin-bottom: 5%;
+  background-color: #1d1d1f;
+  border-radius: 30px;
 }
 
 .labelContainer {
   overflow: hidden;
   width: 50vh;
+  margin-top: 3%;
+  margin-left: 8%;
 }
 
 .xButton {
+  margin-top: 0%;
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
   float: right;
   background-color: #1d1d1f;
   color: #d2d2d7;
-  border-radius: 50%;
+  border-radius: 30px;
 }
 
 .xButton:hover,
 .submit:hover {
-  background-color: #fff;
-  color: black;
+  color: #f5f5f7;
+  background-color: #0071e3;
 }
 
 .submit,
 .select {
-  font: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
   font-size: 15px;
   font-weight: 400;
   width: 50vh;
@@ -311,17 +341,22 @@ a:visited {
   color: #d2d2d7;
   border-radius: 5px;
   background: #1d1d1f;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
-.contactUs,
-.submit {
+.contactUs {
   margin-bottom: 10px;
+  transition: 0.3s;
+}
+.submit {
+  margin-bottom: 4%;
 }
 
 .email,
 .subject,
 .message {
-  font: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font: "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #d2d2d7;
@@ -329,6 +364,9 @@ a:visited {
   background: #1d1d1f;
   width: 49vh;
   margin-top: 1%;
+  margin-left: 4.5%;
+  margin-right: 4.5%;
+  transition: 0.3s;
 }
 
 textarea {
@@ -336,12 +374,13 @@ textarea {
 }
 
 .profileContainer {
-  display: grid;
-  flex-direction: column;
   content: contain;
-  padding-left: 15%;
-  padding-right: 15%;
-  width: 70%;
+  padding: 25px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  max-width: 1200px;
+  transition: 0.3s;
 }
 
 .daeyeonProfile,
@@ -354,6 +393,7 @@ textarea {
   width: 100%;
   height: 400px;
   border-radius: 30px;
+  transition: 0.3s;
 }
 
 .daeyeonProfile {
@@ -364,10 +404,12 @@ textarea {
     #a82b7d 100%
   );
   overflow: hidden;
+  transition: 0.3s;
 }
 
 .gageProfile {
-  border: 1px solid #663a7e;
+  background-color: rgba(116, 159, 197, 0.741);
+  transition: 0.3s;
 }
 
 .backgroundGif {
@@ -384,12 +426,11 @@ textarea {
 
 .profileHeader {
   position: relative;
-  width: fit-content;
-  height: fit-content;
   padding: 30px;
   font-size: 21px;
-  font-family: Lobster;
+  font-family: San Francisco;
   color: rgb(239, 237, 237);
+  transition: 0.3s;
 }
 
 @media (max-width: 700px) {
@@ -399,51 +440,83 @@ textarea {
 }
 
 .profilePicture {
+  position: relative;
   height: auto;
   width: 20vh;
   align-self: center;
-  transition:.3s;
+  transition: 0.3s;
 }
 
 .profileContent {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-  position: absolute;
-
+  position: relative;
+  max-width: 80%;
+  min-width: 350px;
+  font-family: San Francisco;
   margin-left: 30px;
   margin-right: 30px;
-  text-align: justify;
-  font-size: 30px;
+  font-size: clamp(1.875rem, 1.0417rem + 4.4444vw, 9.375rem);
+  text-align: center;
+  transition: 0.3s;
 }
-.robinProfile{
+
+.robinProfile {
   background-image: linear-gradient(rgba(0, 173, 147, 0.87), rgb(0, 0, 0));
 }
 
-.profileText{
-  font-size: 20px;
-  padding-top: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+.robinProfile {
+  background-image: linear-gradient(rgb(1, 41, 6), rgb(0, 24, 6));
+  transition: 0.3s;
+}
+
+.jeremyProfile {
+  background: linear-gradient(
+    225deg,
+    #1623a6 0%,
+    #3343d4 29%,
+    #175eac 73%,
+    #176682 100%
+  );
+  transition: 0.3s;
+}
+
+.rHeader {
+  display: flex;
+  justify-content: right;
+  padding-right: 50px;
+  transition: 0.3s;
+}
+
+.rPC {
+  background: -webkit-linear-gradient(white 1%, rgb(9, 255, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.profileUH {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  transition: 0.3s;
+}
+
+.profileUH:hover {
   color: white;
 }
 
-.profileUH{
-  display: flex;
-  flex-direction: row;
-}
-
-.profileUH:hover{
-    color: white;
-}
-
-.hJeremy{
+.hJeremy {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   height: auto;
   width: 20vh;
   align-self: center;
+  transition: 0.3s;
 }
 
-.hRobin:hover{
-  scale:1.5;
-  transition:1s;
-};
+.hRobin:hover {
+  scale: 1.5;
+  transition: 1s;
+}
+
+.jPC {
+  color: rgb(165, 183, 206);
+}

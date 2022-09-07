@@ -8,11 +8,13 @@ const FormFooter = () => {
   let showForm = () => {
     if (!contactPressed) {
       setContactPressed(true);
-      $(".formFooter").css("height", "22%");
+      $(".formFooter")
+        .css("height", "20%")
+        .css("background-color", "transparent");
       $("html, body").animate({ scrollTop: $(document).height() }, 1000);
     } else {
       setContactPressed(false);
-      $(".formFooter").css("height", "5%");
+      $(".formFooter").css("height", "5%").css("background-color", "#1d1d1f");
     }
   };
 
@@ -74,7 +76,7 @@ const FormFooter = () => {
                 Who would you like to contact?
               </label>
               <button className="xButton" onClick={showForm}>
-                X
+                Close
               </button>
             </div>
 
@@ -115,7 +117,7 @@ const FormFooter = () => {
             </div>
             <div>
               <button className="submit" type="submit">
-                Send a message
+                Send a message!
               </button>
             </div>
           </form>

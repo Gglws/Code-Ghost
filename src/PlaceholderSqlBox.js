@@ -1,5 +1,8 @@
 import React from "react";
-import profilePic from "./profile_highlights/images.jpg";
+import daeyeon from "./assets/daeyeon_linkedin.jpg";
+import gage from "./assets/gage_linkedin.jpg";
+import jeremy from "./assets/jeremy_linkedin.jpg";
+import robin from "./assets/robin_linkedin.jpg";
 
 function PlaceholderSqlBox() {
   return (
@@ -11,15 +14,18 @@ function PlaceholderSqlBox() {
       </div>
       <div className="sqlSubBoxContainer">
         <div className="sqlSubBox">
-          <img src={profilePic} className="sqlSubBoxPic" alt="Profile Pic" />
+          <img src={daeyeon} className="sqlSubBoxPic" alt="Profile Pic" />
           <h3 className="sqlBoxName">Daeyeon Cho</h3>
-          <p className="bulletPoint">Bullet point 1</p>
-          <p className="bulletPoint">Bullet point 2</p>
-          <p className="bulletPoint">Bullet point 3</p>
-          <p className="bulletPoint">Bullet point 4</p>
-          <p className="bulletPoint">Bullet point 5</p>
-          <p className="bulletPoint">Bullet point 6</p>
-          <p className="bulletPoint">Bullet point 7</p>
+          <p className="bulletPoint">JavaScript (ES5/ES6)</p>
+          <p className="bulletPoint">JQuery</p>
+          <p className="bulletPoint">HTML5/CSS</p>
+          <p className="bulletPoint">Express</p>
+          <p className="bulletPoint">PostgresSQL</p>
+          <p className="bulletPoint">Node.js</p>
+          <p className="bulletPoint">React</p>
+          <p className="bulletPoint">Git</p>
+          <p className="bulletPoint">RESTful API</p>
+          <p className="bulletPoint">Heroku/Render Deployment</p>
           <a
             href="https://www.linkedin.com/in/daeyeon-cho-20a503225/"
             className="button"
@@ -28,29 +34,35 @@ function PlaceholderSqlBox() {
           </a>
         </div>
         <div className="sqlSubBox">
-          <img src={profilePic} className="sqlSubBoxPic" alt="Profile Pic" />
+          <img src={gage} className="sqlSubBoxPic" alt="Profile Pic" />
           <h3 className="sqlBoxName">Gage Lewis</h3>
-          <p className="bulletPoint">Bullet point 1</p>
-          <p className="bulletPoint">Bullet point 2</p>
-          <p className="bulletPoint">Bullet point 3</p>
-          <p className="bulletPoint">Bullet point 4</p>
-          <p className="bulletPoint">Bullet point 5</p>
-          <p className="bulletPoint">Bullet point 6</p>
-          <p className="bulletPoint">Bullet point 7</p>
+          <p className="bulletPoint">JavaScript (ES5/ES6)</p>
+          <p className="bulletPoint">JQuery</p>
+          <p className="bulletPoint">HTML5/CSS</p>
+          <p className="bulletPoint">Express</p>
+          <p className="bulletPoint">PostgresSQL</p>
+          <p className="bulletPoint">Microsoft Visual Basic(VB.NET/VBA)</p>
+          <p className="bulletPoint">React</p>
+          <p className="bulletPoint">Java</p>
+          <p className="bulletPoint">RESTful API</p>
+          <p className="bulletPoint">Heroku/Render Deployment</p>
           <a href="https://www.linkedin.com/in/gage-lewis1/" className="button">
             LinkedIn
           </a>
         </div>
         <div className="sqlSubBox">
-          <img src={profilePic} className="sqlSubBoxPic" alt="Profile Pic" />
+          <img src={jeremy} className="sqlSubBoxPic" alt="Profile Pic" />
           <h3 className="sqlBoxName">Jeremy Linder</h3>
-          <p className="bulletPoint">Bullet point 1</p>
-          <p className="bulletPoint">Bullet point 2</p>
-          <p className="bulletPoint">Bullet point 3</p>
-          <p className="bulletPoint">Bullet point 4</p>
-          <p className="bulletPoint">Bullet point 5</p>
-          <p className="bulletPoint">Bullet point 6</p>
-          <p className="bulletPoint">Bullet point 7</p>
+          <p className="bulletPoint">JavaScript (ES5/ES6)</p>
+          <p className="bulletPoint">JQuery</p>
+          <p className="bulletPoint">HTML5/CSS</p>
+          <p className="bulletPoint">Express</p>
+          <p className="bulletPoint">PostgresSQL</p>
+          <p className="bulletPoint">Node.js</p>
+          <p className="bulletPoint">React</p>
+          <p className="bulletPoint">Git</p>
+          <p className="bulletPoint">RESTful API</p>
+          <p className="bulletPoint">Heroku/Render Deployment</p>
           <a
             href="https://www.linkedin.com/in/jeremyrlinder/"
             className="button"
@@ -59,15 +71,18 @@ function PlaceholderSqlBox() {
           </a>
         </div>
         <div className="sqlSubBox">
-          <img src={profilePic} className="sqlSubBoxPic" alt="Profile Pic" />
+          <img src={robin} className="sqlSubBoxPic" alt="Profile Pic" />
           <h3 className="sqlBoxName">Robin Kluis</h3>
-          <p className="bulletPoint">Bullet point 1</p>
-          <p className="bulletPoint">Bullet point 2</p>
-          <p className="bulletPoint">Bullet point 3</p>
-          <p className="bulletPoint">Bullet point 4</p>
-          <p className="bulletPoint">Bullet point 5</p>
-          <p className="bulletPoint">Bullet point 6</p>
-          <p className="bulletPoint">Bullet point 7</p>
+          <p className="bulletPoint">JavaScript (ES5/ES6)</p>
+          <p className="bulletPoint">JQuery</p>
+          <p className="bulletPoint">HTML5/CSS</p>
+          <p className="bulletPoint">Express</p>
+          <p className="bulletPoint">PostgresSQL</p>
+          <p className="bulletPoint">Node.js</p>
+          <p className="bulletPoint">React</p>
+          <p className="bulletPoint">Git</p>
+          <p className="bulletPoint">RESTful API</p>
+          <p className="bulletPoint">Heroku/Render Deployment</p>
           <a href="https://www.linkedin.com/in/rmkluis/" className="button">
             LinkedIn
           </a>

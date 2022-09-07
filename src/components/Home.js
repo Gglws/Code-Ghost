@@ -30,7 +30,6 @@ export default function Home() {
           <PlaceholderSqlBox scroll={scrollYProgress} />
         </div>
       </div>
-      {/* <LoginForm /> */}
       <FormFooter />
     </section>
   );

@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from "react";
-import profilePic from "./images.jpg";
+import hDaeyeon from "../robin/hDaeyeon.PNG";
 import $ from "jquery";
 import {
   motion,
@@ -23,18 +23,19 @@ function Daeyeon(props) {
 
   }, []));
 
-
   return (
     <motion.div className="daeyeonProfile">
-      <div className="profileHeader"> Daeyeon </div>
-      <div className="profileContent">Blah blah blah blah blah blah</div>
+      <div className="profileHeader jHeader"> Daeyeon - 4 years U.S. Army</div>
+      <div className="profileUH">
       <img
-        src={profilePic}
+        src={hDaeyeon}
         className="profilePicture"
         alt="Profile Pic"
         width="500"
         height="500"
       />
+      <div className="profileContent">Precision<br/>and Agility</div>
+      </div>
     </motion.div>
   );
 }
