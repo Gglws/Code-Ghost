@@ -11,7 +11,7 @@ const ProfileHighlights = (props) => {
       <Daeyeon scroll={props.scroll} />
       <Gage />
       <Jeremy />
-      <Robin />
+      <Robin scroll={props.scroll}/>
     </div>
   );
 };

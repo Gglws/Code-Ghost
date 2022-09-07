@@ -1,16 +1,24 @@
+@font-face {
+  font-family: "San Francisco";
+  src: local("San Francisco"), url(../fonts/SFPro/TrueType/SFProDisplay-Semibold.ttf) format("truetype");
+}
+
+
 .page-nav-container {
   top: 0;
   display: flex;
-  justify-content: flex-end;
-  background-color: rgb(44, 44, 44);
+  justify-content: center;
+  background-color: rgb(76, 76, 76);
   height: 50px;
+  align-items: center;
 }
 .page-nav-btn {
+  font-family: San Francisco;
   display: flex;
   justify-content: left;
   padding-left: 50px;
-  font-size: 30px;
-  color: azure;
+  font-size: 15px;
+  color: rgb(214, 214, 214);
   padding-right: 50px;
 }
 

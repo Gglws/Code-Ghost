@@ -19,10 +19,10 @@ function Intro(props) {
     () =>
       props.scroll.onChange(() => {
         if (props.scroll.get() > 0 && menuHidden === false) {
-          $(".header").animate({ top: "0" }, "slow");
+          $(".header").animate({ top: "0" }, 0);
           menuHidden = true;
         } else if (props.scroll.get() === 0 && menuHidden === true) {
-          $(".header").animate({ top: "50px" }, "slow");
+          $(".header").animate({ top: "50px" }, 0);
           menuHidden = false;
         }
 
@@ -68,16 +68,12 @@ function Intro(props) {
         </motion.div>
       </div>
       <div className="introText">
+      <p className="textMid introCopy"> Frontend. Backend. FullStack.</p>
         <div className="codeGhosts">&#123;codeGhosts&#125;</div>
         <div className="introCopy">
           <p>
             Meet the codeGhosts. We are Software Engineers and Military Veterans
-            with coding skills so good
-            <br /> ...it's spooky.
-          </p>{" "}
-          <p className="textMid"> Frontend. Backend. FullStack.</p>
-          <p className="textEnd">
-            You need it. We can do it... or we will binge read documentation and
+            with coding skills so good... it's spooky. You need it. We can do it... or we will binge read documentation and
             watch YouTube tutorials until we can.
           </p>
         </div>
