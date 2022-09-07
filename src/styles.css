@@ -454,8 +454,9 @@ textarea {
   font-family: San Francisco;
   margin-left: 30px;
   margin-right: 30px;
-  text-align: justify;
-  font-size: 30px;
+  font-size: clamp(1.875rem, 1.0417rem + 4.4444vw, 9.375rem);
+  text-align: center;
+  transition: 0.3s;
 }
 
 .robinProfile {
