@@ -30,7 +30,7 @@ const FormFooter = () => {
 
     window.alert("Message sent to " + messageObj.name);
     //FETCH POST :START
-    fetch("http://localhost:5000/api/member", {
+    fetch("http://localhost:5001/api/member", {
       mode: "cors",
       method: "POST",
       headers: { "Content-Type": "application/json" },

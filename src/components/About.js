@@ -1,16 +1,25 @@
 import { Link } from 'react-router-dom'
-// import Intro from '../robin/Intro.js'
+// import PlaceholderSqlBox from '../PlaceholderSqlBox.js'
+import Header from '../robin/Header.js'
+import HeaderMenu from '../robin/HeaderMenu.js'
+import './About.css'
+import BodyAbout from './BodyAbout.js'
+import HeaderAbout from './HeaderAbout.js'
 
 export default function About() {
     return (
-        <section>
-            <h2>About</h2>
-            {/* <Intro /> */}
-            <p>about info is here</p>
-            <p>about info is here</p>
-            <p>about info is here</p>
+        <div>
+            <div className="about-page">
+                <div className="about">
+                    {/* <Header /> */}
+                    <HeaderMenu />
+                </div>
+            </div>
+            <HeaderAbout />
+            <BodyAbout />
+            {/* <PlaceholderSqlBox className="sqlbox-about-page"/> */}
+            <Link to='/' className="nav-btn">Go to Home BTN</Link>
 
-            <Link to='/' className="nav-btn">Go to Home</Link>
-        </section>
+        </div>
     )
   }
