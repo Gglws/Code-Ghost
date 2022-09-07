@@ -1,19 +1,21 @@
 import React from "react";
-import profilePic from "./images.jpg";
+import hGage from "../robin/hGage.PNG";
 
 function Gage() {
   return (
     <div className="gageProfile">
       <div className="backgroundGif"></div>
-      <div className="profileHeader"> Gage </div>
-      <div className="profileContent">Blah blah blah blah blah blah</div>
-      <img
-        src={profilePic}
-        className="profilePicture"
-        alt="Profile Pic"
-        width="500"
-        height="500"
-      />
+        <div className="profileHeader rHeader"> Gage - 8 years U.S Air Force</div>
+      <div className="profileUH">
+        <div className="profileContent gPC">Intelligence <br/> and Poise</div>
+        <img
+          src={hGage}
+          className="hJeremy"
+          alt="Profile Pic"
+          width="500"
+          height="500"
+        />
+      </div>
     </div>
   );
 }
