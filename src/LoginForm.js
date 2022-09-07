@@ -1,62 +1,88 @@
-import React, { useState } from "react";
+import { useState, useRef, useEffect, useContext } from "react";
+import AuthContext from "./context/AuthProvider.js";
 import axios from "axios";
 
-function LoginForm() {
+const LoginForm = () => {
+  const { setAuth } = useContext(AuthContext);
+  const userRef = useRef();
+  const errRef = useRef();
+  const LOGIN_URL = "/api/userSessions";
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [login, setLogin] = useState(false);
-//   const [logout, setLogout] = useState("");
-  const updateEmail = (event) => {
-    setEmail(event.target.value);
-  };
-  const updatePassword = (event) => {
-    setPassword(event.target.value);
-  };
-//   const updateLogin = () => {
-//     setLogin(true);
-//   };
-//   const updateLogout = () => {
-//     setLogin(false);
-//   };
-  function HandleSubmit(e) {
+  const [errMsg, setErrMsg] = useState("");
+  const [success, setSuccess] = useState(false);
+
+  useEffect(() => {
+    userRef.current.focus();
+  }, []);
+
+  useEffect(() => {
+    setErrMsg('');
+  }, [email, password]);
+
+  const HandleSubmit = async (e) => {
     e.preventDefault();
-    axios({
-      url: "/userSessions", //this needs to be replaced in production
-      method: "POST",
-      data: { email, password },
-      headers: {
-        'Content-Type': 'application/json',
-    },
-    })
-    // .then(
-    //         setLogin(true),
-    //         console.log(login),
-    //         window.location.href = "/"
-            // localStorage.setItem("UserName", ));
-  //)
-}
+    try {
+      const response = await axios.post(
+        LOGIN_URL,
+        JSON.stringify({email, password}),
+        { headers: {'Content-Type': 'application/json'},
+        withCredentials: true
+      });
+      console.log(JSON.stringify(response))
+        setEmail('');
+        setPassword('');
+        setSuccess(true);
+    } catch (err) {
+
+    }
+  
+  }
+
   return (
     <>
-      <p>login Form temp</p>
-      <form onSubmit={HandleSubmit} className="login">
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={updateEmail}
-          autoComplete="current-username"
-        ></input>
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={updatePassword}
-          autoComplete="current-password"
-        ></input>
-        <input type="submit"/>
-      </form>
-      <br></br>
+      {success ? (
+        <section>
+          <h1>You are logged in</h1>
+          <br />
+          <p>
+            <a href='/'>Go to Home</a>
+          </p>
+        </section>
+      ) : (
+        <section>
+          <p ref={errRef} className={errMsg ? "errMsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
+          <h1>Sign In</h1>
+          <form onSubmit={HandleSubmit}>
+            <label htmlFor="username">Username:</label>
+            <input
+            type="text"
+            id="username"
+            ref={userRef}
+            autoComplete="current-username"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+            required
+            ></input>
+            <label htmlFor="password">Password:</label>
+            <input
+            type="password"
+            id="password"
+            autoComplete="current-password"
+            onChange={(e) => setPassword(e.target.value)}
+            value={password}
+            required
+            ></input>
+            <button>Sign In</button>
+          </form>
+        </section>
+
+      )
+      }
+    
+    
     </>
-  );
+  )
 }
 export default LoginForm;
