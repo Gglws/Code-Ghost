@@ -22,9 +22,12 @@ function Form() {
   function HandleSubmit(e) {
     e.preventDefault();
     axios({
-      url: "http://localhost:5001/api/userAccounts", //this needs to be replaced in production
+      url: "/userAccounts", //this needs to be replaced in production
       method: "POST",
       data: { email, password, fullName, company },
+      headers: {
+        'Content-Type': 'application/json',
+    },
     }).then(
       console.log("signed up"),
       setEmail(""),

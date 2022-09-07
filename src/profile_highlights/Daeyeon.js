@@ -1,9 +1,31 @@
-import React from "react";
+import { React, useEffect, useState } from "react";
 import profilePic from "./images.jpg";
+import $ from "jquery";
+import {
+  motion,
+  useScroll,
+  useSpring,
+  useTransform,
+  MotionValue,
+} from "framer-motion";
 
-function Daeyeon() {
+function Daeyeon(props) {
+  const [scroller, setScroller] = useState(1);
+
+  useEffect(
+    () =>
+      props.scroll.onChange(() => {
+        setScroller(props.scroll.get());
+      $(".daeyeonProfile").css({
+        "background-image": `linear-gradient(30deg,#214079 1%, #663a7e ${props.scroll.get()*200}%, #a82b7d 100%)`,
+      
+    });
+
+  }, []));
+
+
   return (
-    <div className="profile">
+    <motion.div className="daeyeonProfile">
       <div className="profileHeader"> Daeyeon </div>
       <div className="profileContent">Blah blah blah blah blah blah</div>
       <img
@@ -13,7 +35,7 @@ function Daeyeon() {
         width="500"
         height="500"
       />
-    </div>
+    </motion.div>
   );
 }
 

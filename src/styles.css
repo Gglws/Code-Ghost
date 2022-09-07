@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Lobster";
+  src: local("Lobster"), url(./fonts/Lobster-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "San Francisco";
+  src: url(./fonts/SFPro/TrueType/SFProDisplay-Semibold.ttf) format("truetype");
+}
+@font-face {
+font-family: 'PressStart2P';
+src: local('PressStart2P'), url(./fonts/PressStart2P-Regular.ttf) format('truetype');
+}
+
+
 body,
 html,
 main {
@@ -13,32 +28,36 @@ main {
   top: 0;
   left: 0;
   right: 0;
-  height: 5px;
+  height: 3px;
+  z-index: 1;
   background: white;
   transform-origin: 0%;
 }
 .header {
+  top: 50px;
+  position: fixed;
   justify-content: center;
   background-color: rgb(36, 37, 41);
-  height: 50px;
+  height: 53px;
   display: flex;
+  z-index: 1;
   flex-direction: row;
   min-width: 100vw;
   font-family: Arial, Helvetica, sans-serif;
-  align-items:center;
+  align-items: center;
+  /* position: fixed; stay on the top */
 }
-.CT{
+.CG {
   padding-right: 20px;
   height: 30px;
   width: 30px;
+  cursor: pointer;
 }
 .title {
   padding-right: 5%;
 }
 .login {
-}
-.headerMenu {
-  padding-left: 5%;
+  background-color: #214079;
 }
 
 .innerApp {
@@ -51,42 +70,185 @@ main {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  background-image: radial-gradient(rgb(36, 37, 41), rgba(36, 37, 41, 0.566), rgba(0, 0, 0, 0));
+  background-image: radial-gradient(
+    rgb(36, 37, 41),
+    rgba(36, 37, 41, 0.566),
+    rgba(0, 0, 0, 0)
+  );
   border-radius: 10px;
   padding-left: 15%;
   padding-right: 15%;
+  padding-top: 100px;
 }
 
 
+
 .introImage{
- 
-  height: clamp(50%, auto, 800px);
+  /* height: clamp(50%, auto, 800px); */
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: baseline;
+}
+
+.introText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introCopy {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  width: 70%;
+  color: rgba(255, 255, 255, 0.57);
+  text-align: center;
+}
+
+.textMid {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.textEnd {
+  font-size: 23px;
+}
+
+.codeGhosts {
+  font-family: Lobster;
+  font-size: 160px;
+  background: -webkit-radial-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .image {
   height: auto;
   max-width: 100%;
+  position: relative;
+  padding: -20%;
+}
+
+.gRobin{
+  transform: translate(20%, 0%);
+}
+
+.gDaeyeon{
+  transform: translate(10%, 0%);
+}
+
+
+.gJeremy{
+  transform: translate(-10%, 0%);
+}
+
+.gGage{
+  transform: translate(-20%, 0%);
+}
+
+.cgBig {
+  position: fixed;
+  opacity: 0.5;
+  bottom: 0;
+  height: auto;
+  max-width: 50%;
 }
 
 .sqlBox {
+  background: #1d1d1f;
   justify-content: center;
+  contain: content;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.sqlBoxTitle {
+  height: auto;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  position: relative;
+  top: 0px;
+  contain: content;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.sqlBoxTitleText {
+  color: #f5f5f7;
+  font-size: 40px;
+  line-height: 1.08349;
+  letter-spacing: -0.003em;
+  font-family: "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.sqlSubBoxContainer {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  height: 700px;
+  margin-bottom: 10%;
 }
 
 .sqlSubBox {
-  margin-right: 10px;
-  border-radius: 10px;
-  background-color: rgb(36, 37, 41);
-  height: clamp(20px, 5vw, 40px);
-  border: 1px solid white;
-  width: clamp(90px, 15.25vw, 200px);
-  height: 500px;
+  width: 22%;
+  height: 100%;
+  /* border: 1px solid white; */
+}
+
+.sqlSubBoxPic {
+  margin: 5%;
+  width: 90%;
+  /* border-radius: 50%; */
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.sqlBoxName {
+  font-size: 21px;
+  margin: 5%;
+  width: 90%;
+  /* text-align: center; */
+  color: #f5f5f7;
+  font-family: "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p.bulletPoint {
+  /* text-align: center; */
+  margin: 5%;
+  width: 90%;
+}
+
+a.button {
+  margin: 5%;
+  align-items: center;
+  font-size: 12px;
+  color: #f5f5f7;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+  text-decoration: none;
+  min-width: 23px;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  background: #0071e3;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #f5f5f7;
 }
 
 /* ////////////////////////////// Gage's playground */
@@ -174,7 +336,7 @@ textarea {
 }
 
 .profileContainer {
-  display: flex;
+  display: grid;
   flex-direction: column;
   content: contain;
   padding-left: 15%;
@@ -182,37 +344,51 @@ textarea {
   width: 70%;
 }
 
-.profile {
+.daeyeonProfile,
+.gageProfile,
+.jeremyProfile,
+.robinProfile {
   position: relative;
   margin-top: 15px;
   margin-bottom: 15px;
   width: 100%;
   height: 400px;
-  background: purple;
   border-radius: 30px;
-  background: rgb(2, 0, 36);
-  /* background: linear-gradient(
-    25deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(104, 9, 121, 1) 54%,
-    rgba(91, 0, 255, 1) 100%
-  ); */
+}
+
+.daeyeonProfile {
   background-image: linear-gradient(
     30deg,
     #214079 1%,
-    #663a7e 55%,
+    #663a7e 1%,
     #a82b7d 100%
   );
   overflow: hidden;
 }
 
+.gageProfile {
+  border: 1px solid #663a7e;
+}
+
+.backgroundGif {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 30px;
+  background-image: url(./assets/coding.gif);
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .profileHeader {
+  position: relative;
   width: fit-content;
   height: fit-content;
   padding: 30px;
   font-size: 21px;
-  font-weight: 600;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Lobster;
   color: rgb(239, 237, 237);
 }
 
@@ -223,18 +399,51 @@ textarea {
 }
 
 .profilePicture {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 20px;
-  margin-right: 20px;
-  border-radius: 50%;
-  height: 20vh;
+  height: auto;
   width: 20vh;
+  align-self: center;
+  transition:.3s;
 }
 
 .profileContent {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  position: absolute;
+
   margin-left: 30px;
-  width: 125vh;
-  height: 48vh;
+  margin-right: 30px;
+  text-align: justify;
+  font-size: 30px;
 }
+.robinProfile{
+  background-image: linear-gradient(rgba(0, 173, 147, 0.87), rgb(0, 0, 0));
+}
+
+.profileText{
+  font-size: 20px;
+  padding-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.profileUH{
+  display: flex;
+  flex-direction: row;
+}
+
+.profileUH:hover{
+    color: white;
+}
+
+.hJeremy{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  height: auto;
+  width: 20vh;
+  align-self: center;
+}
+
+.hRobin:hover{
+  scale:1.5;
+  transition:1s;
+};
