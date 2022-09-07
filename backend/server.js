@@ -6,10 +6,9 @@ import cors from "cors";
 import session from "express-session";
 import ConnectPgSimple from "connect-pg-simple";
 dotenv.config();
+const PORT = process.env.PORT || 5001;
 
 const pgSession = new ConnectPgSimple(session);
-
-const PORT = process.env.PORT;
 // const { DATABASE_URL, NODE_ENV, PORT} = process.env;
 
 const app = express();
