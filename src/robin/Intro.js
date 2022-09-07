@@ -30,7 +30,6 @@ function Intro(props) {
       }),
     []
   );
-  // console.log(props.scroll.get());
 
   return (
     <motion.div
