@@ -7,16 +7,13 @@ function HeaderMenu() {
     <div className='page-nav-container'>
       <div className='page-nav-btn'>
         <div>
-          <Link to='/about' className='nav-btn-about'>About</Link>
+          <Link to='/' className='nav-btn-login'>HOME</Link>
         </div>
         <div>
-          <Link to='/login' className='nav-btn-login'>Login</Link>
+          <Link to='/about' className='nav-btn-about'>ABOUT</Link>
         </div>
         <div>
-          <Link to='/login' className='nav-btn-login'>NEW</Link>
-        </div>
-        <div>
-          <Link to='/login' className='nav-btn-login'>NEW</Link>
+          <Link to='/login' className='nav-btn-login'>LOGIN</Link>
         </div>
       </div>
 

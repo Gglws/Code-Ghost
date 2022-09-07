@@ -38,7 +38,7 @@ function Form() {
   }
   return (
     <>
-      <p>Signup Form temp</p>
+      {/* <p>Signup Form temp</p> */}
       <form onSubmit={HandleSubmit} className="registration">
         <input
           type="email"

@@ -37,7 +37,7 @@ function LoginForm() {
 }
   return (
     <>
-      <p>login Form temp</p>
+      {/* <p>login Form temp</p> */}
       <form onSubmit={HandleSubmit} className="login">
         <input
           type="email"
