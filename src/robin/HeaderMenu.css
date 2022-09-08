@@ -34,6 +34,12 @@
   padding-left: 50px;
 }
 
+.welcome {
+  display: flex;
+  justify-content: center;
+  padding-left: 50px;
+}
+
 a:-webkit-any-link {
   color: aliceblue;
 }

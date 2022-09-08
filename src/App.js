@@ -5,6 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import Login from "./components/Login.js";
+import Logout from "./components/Logout.js";
 import Home from "./components/Home.js";
 import About from "./components/About.js";
 import React from "react";
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />}/> 
+          <Route path="/logout" element={<Logout />}/> 
         </Routes>
     </Router>
   );

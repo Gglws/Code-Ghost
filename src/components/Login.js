@@ -8,7 +8,6 @@ import './Login.css'
 // import { motion, useScroll } from "framer-motion";
 
 export default function Login() {
-    // const { scrollYProgress } = useScroll();
     return (
         <div>
             {/* <Header /> */}
@@ -16,7 +15,7 @@ export default function Login() {
             {/* <Intro clasName="intro-login" scroll={scrollYProgress} /> */}
             <div className="header-container-login">
                 <div className="header-login">
-                    <h1>LOGIN PAGE TITLE</h1>
+                    <h1>SIGN IN HERE</h1>
                 </div>
             </div>
             <div className="body-container-login">

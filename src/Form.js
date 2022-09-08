@@ -22,7 +22,7 @@ function Form() {
   function HandleSubmit(e) {
     e.preventDefault();
     axios({
-      url: "/userAccounts", //this needs to be replaced in production
+      url: "/api/userAccounts", //this needs to be replaced in production
       method: "POST",
       data: { email, password, fullName, company },
       headers: {
