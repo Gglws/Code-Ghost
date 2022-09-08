@@ -1,8 +1,6 @@
 import React from "react";
-
-// import HeaderMenu from "./HeaderMenu.js";
+import { Link } from 'react-router-dom'
 import { motion } from "framer-motion";
-// import Form from "../Form.js";
 import CG from "./CG.PNG";
 
 function Header() {
@@ -11,8 +9,9 @@ function Header() {
       <motion.div
         whileHover={{ scale: [null, 1.3, 1.2] }}
         transition={{ duration: 0.3 }}
-      >
-        <img className="CG" src={CG} alt="CG" />
+      ><Link to='/'>
+        <img className="CG" src={CG} alt="CG"/>
+        </Link>
       </motion.div>
     </div>
   );

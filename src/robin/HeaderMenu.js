@@ -6,15 +6,8 @@ function HeaderMenu() {
   return (
     <div className='page-nav-container'>
       <div className='page-nav-btn'>
-        <div>
-          <Link to='/' className='nav-btn-login'>HOME</Link>
-        </div>
-        <div>
-          <Link to='/about' className='nav-btn-about'>ABOUT</Link>
-        </div>
-        <div>
-          <Link to='/login' className='nav-btn-login'>LOGIN</Link>
-        </div>
+          <Link to='/about' className='nav-btn-about'>about</Link>
+          <Link to='/login' className='nav-btn-login'>login</Link>
       </div>
 
     </div>

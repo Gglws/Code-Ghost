@@ -11,8 +11,9 @@ import React from "react";
 import "./styles.css";
 
 function App() {
+  
   return (
-
+<>
     <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -20,6 +21,7 @@ function App() {
           <Route path="/login" element={<Login />}/> 
         </Routes>
     </Router>
+    </>
   );
 }
 
