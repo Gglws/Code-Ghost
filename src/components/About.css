@@ -1,0 +1,85 @@
+.nav-btn {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+.header-container-about {
+    display: flex;
+    justify-content: center;
+    border: 2px solid yellowgreen;
+    border-radius: 20px;
+}
+.header-about {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin: 100px 10px;
+}
+.header-about-title {
+    display: flex;
+    justify-content: flex-start;
+}
+.header-about-info {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 30px;
+}
+
+
+.body-container-about {
+    display: flex;
+    justify-content: center;
+    border: 2px solid yellowgreen;
+    border-radius: 20px;
+}
+.body-about {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.body-about-database {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 50px;
+    padding: 20px;
+    color: rgb(62, 62, 173);
+    background-image: url("Postgresql_elephant.svg.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.body-about-react {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 50px;
+    color: rgb(15, 233, 218);
+    background-image: url("React-icon.svg.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.body-about-trello {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 50px;
+    padding: 20px;
+    color: rgb(62, 62, 173);
+    background-image: url("trello.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.sqlbox-about-page {
+    margin-top: 50px;
+}
