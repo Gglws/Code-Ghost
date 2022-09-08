@@ -8,7 +8,8 @@ CREATE TABLE memberInfo (
     name TEXT,
     email TEXT,
     subject TEXT,
-    message TEXT
+    message TEXT,
+    date TEXT
 );
 
 CREATE TABLE userAccounts (
@@ -23,10 +24,7 @@ CREATE TABLE userSessions (
     userID INTEGER NOT NULL
 );
 
-INSERT INTO memberInfo (name, email, subject, message) VALUES ('Daeyeon', 'daeyeon@gmail.com', 'subject', 'message');
-INSERT INTO memberInfo (name, email, subject, message) VALUES ('Jeremy', 'jeremy@gmail.com', 'subject', 'message');
-INSERT INTO memberInfo (name, email, subject, message) VALUES ('Gage', 'gage@gmail.com', 'subject', 'message');
-INSERT INTO memberInfo (name, email, subject, message) VALUES ('Robin', 'robin@gmail.com', 'subject', 'message');
+
 INSERT INTO userAccounts (email, password, fullName, company) VALUES ('johndoe@mail.com',
  crypt('johnspassword', gen_salt('bf')),
   'John Doe', 'USMC');

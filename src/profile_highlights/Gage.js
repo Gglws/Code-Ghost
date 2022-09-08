@@ -5,9 +5,11 @@ function Gage() {
   return (
     <div className="gageProfile">
       <div className="backgroundGif"></div>
-        <div className="profileHeader rHeader"> Gage - 8 years U.S Air Force</div>
+      <div className="profileHeader rHeader"> Gage - 8 years U.S Air Force</div>
       <div className="profileUH">
-        <div className="profileContent gPC">Intelligence <br/> and Poise</div>
+        <div className="profileContent gPC">
+          Intelligence <br /> and Equilibrium
+        </div>
         <img
           src={hGage}
           className="hJeremy"
