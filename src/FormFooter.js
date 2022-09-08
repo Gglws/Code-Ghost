@@ -21,16 +21,16 @@ const FormFooter = () => {
   let submitForm = () => {
     let messageObj = {};
     messageObj.name = $('select[class="select"]').val();
-    console.log(messageObj.name);
+    // console.log(messageObj.name);
     messageObj.email = $('input[class="email"]').val();
     messageObj.subject = $('input[class="subject"]').val();
     messageObj.message = $('textarea[class="message"]').val();
 
-    console.log(messageObj);
+    // console.log(messageObj);
 
     window.alert("Message sent to " + messageObj.name);
     //FETCH POST :START
-    fetch("http://localhost:5000/api/member", {
+    fetch("http://localhost:5001/api/member", {
       mode: "cors",
       method: "POST",
       headers: { "Content-Type": "application/json" },
