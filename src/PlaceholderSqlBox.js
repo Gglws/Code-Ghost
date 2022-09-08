@@ -74,15 +74,15 @@ function PlaceholderSqlBox() {
           <img src={robin} className="sqlSubBoxPic" alt="Profile Pic" />
           <h3 className="sqlBoxName">Robin Kluis</h3>
           <p className="bulletPoint">JavaScript (ES5/ES6)</p>
-          <p className="bulletPoint">JQuery</p>
+          <p className="bulletPointLesser">JQuery</p>
           <p className="bulletPoint">HTML5/CSS</p>
-          <p className="bulletPoint">Express</p>
-          <p className="bulletPoint">PostgresSQL</p>
+          <p className="bulletPointLesser">Express</p>
+          <p className="bulletPointLesser">PostgresSQL</p>
           <p className="bulletPoint">Node.js</p>
           <p className="bulletPoint">React</p>
           <p className="bulletPoint">Git</p>
-          <p className="bulletPoint">RESTful API</p>
-          <p className="bulletPoint">Heroku/Render Deployment</p>
+          <p className="bulletPointLesser">RESTful API</p>
+          <p className="bulletPointLesser">Heroku/Render Deployment</p>
           <a href="https://www.linkedin.com/in/rmkluis/" className="button">
             LinkedIn
           </a>

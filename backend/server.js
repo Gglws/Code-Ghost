@@ -9,8 +9,7 @@ dotenv.config();
 
 const pgSession = new ConnectPgSimple(session);
 
-const { DATABASE_URL, NODE_ENV, PORT} = process.env;
-
+const { DATABASE_URL, NODE_ENV, PORT } = process.env;
 
 const app = express();
 app.use(express.json());
@@ -54,12 +53,12 @@ app.post("/api/userSessions", (req, res) => {
         console.log("Invalid Email or Password.");
         return res.status(401).send("Invalid Email or Password.");
       }
-    //   const { id, fullName } = data.rows[0];
-    //   pool.query("INSERT INTO userSessions (userID) VALUES ($1)", [
-    //     id,
-    //     fullName,
-    //   ]);
-    //   console.log(data.rows);
+      //   const { id, fullName } = data.rows[0];
+      //   pool.query("INSERT INTO userSessions (userID) VALUES ($1)", [
+      //     id,
+      //     fullName,
+      //   ]);
+      //   console.log(data.rows);
       res.send(data.rows);
     });
 });
@@ -77,20 +76,33 @@ app.get("/api/member", (req, res) => {
 });
 
 app.post("/api/member", (req, res) => {
-  const { name, email, subject, message } = req.body;
+  const { name, email, subject, message, date } = req.body;
   pool
     .query(
-      `INSERT INTO memberInfo(name, email, subject, message) VALUES ($1, $2, $3, $4) RETURNING *;`,
-      [name, email, subject, message]
+      `INSERT INTO memberInfo(name, email, subject, message, date) VALUES ($1, $2, $3, $4, $5) RETURNING *;`,
+      [name, email, subject, message, date]
     )
     .then((data) => {
-      console.log(data);
       if (data.rows.length === 0) {
         res.sendStatus(404);
       } else {
         res.send(data.rows[0]);
       }
     });
+});
+
+app.get("/api/messages/:name", (req, res) => {
+  const name = req.params.name;
+
+  let sql = "SELECT * FROM  memberInfo WHERE name = $1;";
+
+  pool.query(sql, [name]).then((data) => {
+    if (data.rows.length === 0) {
+      res.sendStatus(404);
+    } else {
+      res.send(data.rows);
+    }
+  });
 });
 
 //here

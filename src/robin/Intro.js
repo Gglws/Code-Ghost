@@ -8,7 +8,6 @@ import gGage from "./gGage.PNG";
 import $ from "jquery";
 
 import { motion } from "framer-motion";
-import CG from "./CG.PNG";
 
 function Intro(props) {
   const [scroller, setScroller] = useState(1);
@@ -19,10 +18,10 @@ function Intro(props) {
     () =>
       props.scroll.onChange(() => {
         if (props.scroll.get() > 0 && menuHidden === false) {
-          $(".header").animate({ top: "0" }, 0);
+          $(".header").animate({ top: "0" }, "fast");
           menuHidden = true;
         } else if (props.scroll.get() === 0 && menuHidden === true) {
-          $(".header").animate({ top: "50px" }, 0);
+          $(".header").animate({ top: "40px" }, "fast");
           menuHidden = false;
         }
 
