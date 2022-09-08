@@ -33,7 +33,7 @@ export default function Messages() {
     []
   );
 
-  let currentUser = "daeyeon";
+  let currentUser = localStorage.getItem('name');
 
   useEffect(() => {
     $.get(`http://localhost:5001/api/messages/${currentUser}`, (data) => {
