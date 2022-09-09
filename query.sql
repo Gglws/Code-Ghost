@@ -1,1 +1,1 @@
-SELECT id, fullname FROM userAccounts;
+SELECT * FROM userAccounts;
