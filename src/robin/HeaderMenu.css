@@ -23,11 +23,21 @@
 .nav-btn-about {
   display: flex;
   justify-content: center;
+  text-decoration: none;
+}
+.nav-btn-about:hover {
+  background: skyblue;
+  transition: 250ms;
 }
 
 .nav-btn-login {
   display: flex;
   justify-content: center;
+  text-decoration: none;
+}
+.nav-btn-login:hover {
+  background: skyblue;
+  transition: 250ms;
 }
 
 .welcome {

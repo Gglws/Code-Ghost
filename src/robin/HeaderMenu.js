@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./HeaderMenu.css";
+// import Navbar from "../components/Navbar/Navbar.js";
 
 function HeaderMenu() {
 
@@ -29,12 +30,13 @@ function HeaderMenu() {
   } else {
   return (
     <div className="page-nav-container">
+        {/* <Navbar /> */}
       <div className="page-nav-btn">
         <Link to="/about" className="nav-btn-about">
-          about
+          ABOUT
         </Link>
         <Link to="/login" className="nav-btn-login">
-          login
+          LOGIN
         </Link>
       </div>
     </div>
