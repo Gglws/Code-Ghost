@@ -36,7 +36,7 @@ main {
   position: fixed;
   justify-content: center;
   background-color: rgb(0, 0, 0);
-  border-bottom: .5px solid white;
+  border-bottom: 0.5px solid white;
   height: 40px;
   display: flex;
   z-index: 1;
@@ -162,8 +162,6 @@ main {
   transition: 0.3s;
   height: auto;
   border-radius: 30px;
-
-
 }
 
 .sqlBoxTitle {
@@ -176,7 +174,6 @@ main {
   contain: content;
   text-align: center;
   /* margin-bottom: 5%; */
-  
 }
 
 .sqlBoxTitleText {
@@ -202,16 +199,16 @@ main {
   justify-content: center;
   width: 30vh;
   height: 100%;
-background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
   border-radius: 30px;
-  margin: .1%;
+  margin: 0.1%;
 }
 
 .sqlSubBoxPic {
   margin-top: 20px;
   position: relative;
-left:50%;
-transform: translate(-50%);
+  left: 50%;
+  transform: translate(-50%);
   width: 70%;
   max-width: 1200px;
   width: 50%;
@@ -584,7 +581,7 @@ textarea {
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 2%;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .messagesFooter {

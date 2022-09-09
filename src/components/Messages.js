@@ -33,7 +33,9 @@ export default function Messages() {
     []
   );
 
-  let currentUser = localStorage.getItem('name');
+  let currentUser = localStorage.getItem("name");
+  currentUser = currentUser.split(" ");
+  currentUser = currentUser[0].toLowerCase();
 
   useEffect(() => {
     $.get(`/api/messages/${currentUser}`, (data) => {
