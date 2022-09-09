@@ -9,7 +9,6 @@ import FooterAbout from './FooterAbout.js'
 import HeaderAbout from './HeaderAbout.js'
 export default function About() {
     return (
-
         <div>
             <div className='about-page'>
             <div className='about'>

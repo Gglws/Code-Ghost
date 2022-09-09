@@ -37,6 +37,10 @@ const LoginForm = () => {
         setEmail('');
         setPassword('');
         setSuccess(true);
+          setTimeout(() => {
+            window.location.replace('/')
+            console.log("Delayed for 1 second.");
+          }, 1000)
     } catch (err) {
       if (err.response?.status === 400) {
         setErrMsg('Missing Username or Password')
