@@ -28,6 +28,10 @@ CREATE TABLE userSessions (
 INSERT INTO userAccounts (email, password, fullName, company) VALUES ('johndoe@mail.com',
  crypt('johnspassword', gen_salt('bf')),
   'John Doe', 'USMC');
+INSERT INTO memberInfo (name, email, subject, message, date) VALUES ('Daeyeon', 'daeyeon@gmail.com', 'subject', 'message', 'date');
+INSERT INTO memberInfo (name, email, subject, message, date) VALUES ('Jeremy', 'jeremy@gmail.com', 'subject', 'message', 'date');
+INSERT INTO memberInfo (name, email, subject, message, date) VALUES ('Gage', 'gage@gmail.com', 'subject', 'message', 'date');
+INSERT INTO memberInfo (name, email, subject, message, date) VALUES ('Robin', 'robin@gmail.com', 'subject', 'message', 'date')
 
 
 
