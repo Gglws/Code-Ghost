@@ -1,10 +1,8 @@
-import {React, useRef} from "react";
-import hJeremy from "../robin/hJeremy.PNG";
-import {motion, useInView} from "framer-motion"
-
+import { React, useRef } from "react";
+import hJeremy from "../assets/hJeremy.PNG";
+import { motion, useInView } from "framer-motion";
 
 function Jeremy() {
-
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -22,12 +20,12 @@ function Jeremy() {
           width="500"
           height="500"
         />
-        <motion.div 
+        <motion.div
           className="profileContent"
           style={{
             transform: isInView ? "none" : "translateY(150px)",
             opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1s"
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1s",
           }}
         >
           Versatility
