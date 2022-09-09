@@ -194,6 +194,7 @@ main {
   flex-direction: row;
   justify-content: center;
   margin: 3%;
+  height: 800px;
 }
 
 .sqlSubBox {
