@@ -2,12 +2,11 @@ const HeaderAbout = () => {
     return (
         <div className="header-container-about">
             <div className="header-about">
-                <h1 className="header-about-title">Team Bibble</h1>
-                <p className="header-about-info">In this FEC (Front-End-Capstone) project, team Bibble mainly used React
-                    to build this website...blahlalala blaalalal blaaalla
-                </p>
+                <div className="header-about-title">AAAAAAAA</div>
+                <div className="header-about-info">bbbbbbbbbb</div>
+                <div className="header-about-info">ccccc</div>
+                <div className="header-about-info">dddddddddd</div>
             </div>
-                <h2>TEAM: ASDFASDFQWERWQE</h2>
         </div>
     )
 }

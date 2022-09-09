@@ -8,8 +8,8 @@ import ConnectPgSimple from "connect-pg-simple";
 dotenv.config();
 
 const pgSession = new ConnectPgSimple(session);
-
-const { DATABASE_URL, NODE_ENV, PORT} = process.env;
+const PORT = process.env.PORT || 5001;
+// const { DATABASE_URL, NODE_ENV, PORT} = process.env;
 
 
 const app = express();
