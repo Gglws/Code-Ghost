@@ -90,8 +90,6 @@ main {
 }
 
 .introCopy {
-  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial",
-    sans-serif;
   font-size: 23px;
   width: 70%;
   color: rgba(255, 255, 255, 0.57);
@@ -546,13 +544,21 @@ textarea {
   );
   overflow: hidden;
   position: relative;
-  margin-top: 4vh;
+  margin-top: 3vh;
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
   height: 300px;
   border-radius: 30px;
   transition: 0.3s;
+}
+
+.numberOfMessages {
+  width: 100%;
+  margin-top: 10%;
+  text-align: center;
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica";
+  font-size: 25px;
 }
 
 .messageDate {

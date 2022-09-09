@@ -1,5 +1,5 @@
 import React from "react";
-import hGage from "../robin/hGage.PNG";
+import hGage from "../assets/hGage.PNG";
 
 function Gage() {
   return (
