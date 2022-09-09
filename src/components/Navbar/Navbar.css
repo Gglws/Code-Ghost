@@ -1,0 +1,17 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    top: 0;
+    color: skyblue;
+    margin-left: 10px;
+}
+
+/* .nav-icon {
+    display: block;
+    top: 0;
+    right: 0;
+    position: relative;
+    transform: translate(-100%, 50%);
+    font-size: 3.0rem;
+    cursor: pointer;
+} */

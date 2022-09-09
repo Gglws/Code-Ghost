@@ -28,7 +28,7 @@ function PlaceholderSqlBox() {
           <p className="bulletPointLesser">Heroku/Render Deployment</p>
           <a
             href="https://www.linkedin.com/in/daeyeon-cho-20a503225/"
-            className="button"
+            className="button-linkedin"
           >
             LinkedIn
           </a>
@@ -65,7 +65,7 @@ function PlaceholderSqlBox() {
           <p className="bulletPoint">Heroku/Render Deployment</p>
           <a
             href="https://www.linkedin.com/in/jeremyrlinder/"
-            className="button"
+            className="button-linkedin"
           >
             LinkedIn
           </a>
@@ -83,7 +83,7 @@ function PlaceholderSqlBox() {
           <p className="bulletPoint">Git</p>
           <p className="bulletPointLesser">RESTful API</p>
           <p className="bulletPointLesser">Heroku/Render Deployment</p>
-          <a href="https://www.linkedin.com/in/rmkluis/" className="button">
+          <a href="https://www.linkedin.com/in/rmkluis/" className="button-linkedin">
             LinkedIn
           </a>
         </div>

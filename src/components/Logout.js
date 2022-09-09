@@ -12,7 +12,7 @@ export default function Logout() {
       <Header />
       <div className="header-container-login">
         <div className="header-login">
-          <h1>LOGOUT PAGE TITLE</h1>
+          <h1>UNTIL NEXT TIME, GHOST</h1>
         </div>
       </div>
       <div className="body-container-login">

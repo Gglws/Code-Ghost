@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect, useContext } from "react";
 import AuthContext from "./context/AuthProvider.js";
 import axios from "axios";
-import Form from './Form.js';
 
 const LoginForm = () => {
   const { setAuth } = useContext(AuthContext);
@@ -13,7 +12,6 @@ const LoginForm = () => {
   const [password, setPassword] = useState("");
   const [errMsg, setErrMsg] = useState("");
   const [success, setSuccess] = useState(false);
-  const [newUser, setNewUser] = useState(false);
 
   useEffect(() => {
     userRef.current.focus();
@@ -89,7 +87,6 @@ const LoginForm = () => {
             <button className="subB">Sign In</button>
           </form>
         </section>
-
       )
       }
     </>

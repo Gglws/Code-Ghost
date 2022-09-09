@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./HeaderMenu.css";
+// import Navbar from "../components/Navbar/Navbar.js";
 
 function HeaderMenu() {
   const LoggedName = localStorage.getItem("name");

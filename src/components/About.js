@@ -37,7 +37,6 @@ export default function About() {
       []
     );
     return (
-
         <div>
             <div className='about-page'>
             <div className='about'>
@@ -54,10 +53,3 @@ export default function About() {
         </div>
     )
   }
-
-
-
-
-
-
-
