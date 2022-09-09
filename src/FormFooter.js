@@ -34,7 +34,7 @@ const FormFooter = () => {
     console.log(messageObj);
 
     //FETCH POST :START
-    fetch("http://localhost:5001/api/member", {
+    fetch("/api/member", {
       mode: "cors",
       method: "POST",
       headers: { "Content-Type": "application/json" },

@@ -30,6 +30,12 @@
   justify-content: center;
 }
 
+.welcome {
+  display: flex;
+  justify-content: center;
+  padding-left: 50px;
+}
+
 a:-webkit-any-link {
   color: rgb(255, 255, 255);
   padding: 10px;

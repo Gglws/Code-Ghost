@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect, useContext } from "react";
 import AuthContext from "./context/AuthProvider.js";
 import axios from "axios";
+import Form from './Form.js';
 
 const LoginForm = () => {
   const { setAuth } = useContext(AuthContext);
@@ -12,6 +13,7 @@ const LoginForm = () => {
   const [password, setPassword] = useState("");
   const [errMsg, setErrMsg] = useState("");
   const [success, setSuccess] = useState(false);
+  const [newUser, setNewUser] = useState(false);
 
   useEffect(() => {
     userRef.current.focus();
@@ -30,14 +32,21 @@ const LoginForm = () => {
         { headers: {'Content-Type': 'application/json'},
         withCredentials: true
       });
-      console.log(JSON.stringify(response))
+      localStorage.setItem("name", response.data[0].fullname)
+      localStorage.setItem("ID", response.data[0].id)
         setEmail('');
         setPassword('');
         setSuccess(true);
     } catch (err) {
-
+      if (err.response?.status === 400) {
+        setErrMsg('Missing Username or Password')
+      } else if (err.response?.status === 401) {
+        setErrMsg('Unauthorized')
+      } else {
+        setErrMsg('Login Failed')
+      }
+      errRef.current.focus();
     }
-  
   }
 
   return (
@@ -53,7 +62,6 @@ const LoginForm = () => {
       ) : (
         <section>
           <p ref={errRef} className={errMsg ? "errMsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-          <h1>Sign In</h1>
           <form onSubmit={HandleSubmit}>
             <label htmlFor="username">Username:</label>
             <input
@@ -80,8 +88,6 @@ const LoginForm = () => {
 
       )
       }
-    
-    
     </>
   )
 }
