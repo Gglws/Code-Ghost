@@ -244,7 +244,7 @@ p.bulletPointLesser {
   width: 90%;
 }
 
-a.button {
+a.button-linkedin {
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 5%;
@@ -269,6 +269,9 @@ a.button {
   text-align: center;
   white-space: nowrap;
   background: #0071e3;
+}
+a.button-linkedin:hover {
+  color: black;
 }
 
 a:visited {
@@ -299,7 +302,8 @@ a:visited {
 }
 
 .contactUs:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: skyblue;
 }
 
 .form {
