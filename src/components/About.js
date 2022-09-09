@@ -1,5 +1,7 @@
 
 import { Link } from 'react-router-dom'
+// import PlaceholderSqlBox from '../PlaceholderSqlBox.js'
+import Header from '../robin/Header.js'
 import HeaderMenu from '../robin/HeaderMenu.js'
 import './About.css'
 import BodyAbout from './BodyAbout.js'
@@ -23,10 +25,3 @@ export default function About() {
         </div>
     )
   }
-
-
-
-
-
-
-
