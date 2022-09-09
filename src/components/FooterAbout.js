@@ -8,7 +8,7 @@ const FooterAbout = () => {
             Daeyeon
             <p className="footP">
               {" "}
-              10 years US ARMY (Infantry/Cryptologic Linguist Analyst)
+              4 years US ARMY (Logistics and Supply Manager)
               <br />
               Robin brings a unique blend of military exprerience and an eye for
               visual design. He has led unit programs and managed variously
