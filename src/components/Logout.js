@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import HeaderMenu from "../robin/HeaderMenu.js";
+import Header from '../robin/Header.js'
 import './Login.css'
 
 export default function Logout() {
@@ -8,6 +9,7 @@ export default function Logout() {
   return (
     <div>
       <HeaderMenu />
+      <Header />
       <div className="header-container-login">
         <div className="header-login">
           <h1>LOGOUT PAGE TITLE</h1>
