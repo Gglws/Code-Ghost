@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import "./HeaderMenu.css";
 
 function HeaderMenu() {
-
-  const LoggedName = localStorage.getItem("name")
+  const LoggedName = localStorage.getItem("name");
 
   if (LoggedName) {
     return (

@@ -1,135 +1,146 @@
-nav-btn {
-    display: flex;
-    justify-content: center;
-    padding: 100px;
+@font-face {
+  font-family: "San Francisco";
+  src: local("San Francisco"),
+    url(../fonts/SFPro/TrueType/SFProDisplay-Semibold.ttf) format("truetype");
 }
 
-.about{
-    
+nav-btn {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+.about {
 }
 .header-container-about {
-    display: flex;
-    justify-content: center;
-    color: rgb(53, 66, 57);
-    background-color: rgb(137, 153, 169);
-    background-image: radial-gradient(
-        rgb(255, 255, 255),
-        rgb(219, 228, 235),
-        rgb(203, 220, 237)
-      );
+  display: flex;
+  justify-content: center;
+  color: rgb(53, 66, 57);
+  background-color: rgb(137, 153, 169);
+  background-image: radial-gradient(
+    rgb(255, 255, 255),
+    rgb(219, 228, 235),
+    rgb(203, 220, 237)
+  );
 }
 .header-about {
-    background-image: url('../robin/CG.PNG');
-    background-position: -20%;
-    background-repeat: no-repeat;
-    background-size: 40%;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  background-image: url("../assets/CG.PNG");
+  background-position: -20%;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 .header-about-title {
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    font-size: 4vw;
-    font-family: San FranciscoT;
-    color: rgb(77, 77, 77);
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  font-size: 4vw;
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+  color: rgb(77, 77, 77);
 }
 .header-about-info1 {
-    display: flex;
-    justify-content: center;
-    font-family: Lobster;
-    font-size: 160px;
+  display: flex;
+  justify-content: center;
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+  font-size: 160px;
   color: black;
 }
 
 .header-about-info2 {
-    font-family: San Francisco;
-    position: relative;
-    left:50%;
-    transform: translate(-50%);
-    text-align: center;
-    width: clamp(300px,50vw, 1200px);
-    font-size: 2.5vw;
-    color: rgb(77, 77, 77);
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  width: clamp(300px, 50vw, 1200px);
+  font-size: 2.5vw;
+  color: rgb(77, 77, 77);
 }
 
 .header-about-info3 {
-    display: flex;
-    justify-content: center;
-    margin: 15px;
+  display: flex;
+  justify-content: center;
+  margin: 15px;
 }
 /* BODY */
 .body-container-about {
-    display: flex;
-    justify-content: center;
-    width:100vw;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
 }
 .body-about-one {
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
-.bodyCopy{
-    font-family: San FranciscoT;
-    color: rgb(167, 193, 206);
-    padding-left: 20px;
-    padding-right: 30px;
-    font-size: 2vw;
-    align-self: center;
+.bodyCopy {
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+  color: rgb(167, 193, 206);
+  padding-left: 20px;
+  padding-right: 30px;
+  font-size: 2vw;
+  align-self: center;
 }
 
-.body-about-title{
-    font-family: San Francisco;
-    color: rgb(167, 193, 206);
-    padding-left: 30px;
-    text-align: right;
-    font-size: 4vw;
-    padding-right: 20px;
-
+.body-about-title {
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+  color: rgb(167, 193, 206);
+  padding-left: 30px;
+  text-align: right;
+  font-size: 4vw;
+  padding-right: 20px;
 }
 /* FOOTER */
 .footer-container-about {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(137, 153, 169);
-    background-image: radial-gradient(
-        rgb(255, 255, 255),
-        rgb(219, 228, 235),
-        rgb(203, 220, 237)
-      );
+  display: flex;
+  justify-content: center;
+  background-color: rgb(137, 153, 169);
+  background-image: radial-gradient(
+    rgb(255, 255, 255),
+    rgb(219, 228, 235),
+    rgb(203, 220, 237)
+  );
 }
 .footer-about {
-    flex-direction: column;
-    display: flex;
-    width: 70%;
-    margin: 15px;
+  flex-direction: column;
+  display: flex;
+  width: 70%;
+  margin: 15px;
 }
 .footer-about-title {
-    display: flex;
-    justify-content: center;
-    font-size: 5vw;
-    font-family: San Francisco;
-    color: black;
+  display: flex;
+  justify-content: center;
+  font-size: 5vw;
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+  color: black;
 }
 .footer-about-info {
-    font-size: 3vw;
-    display: flex;
-    justify-content: left;
-    font-family: Lobster;
-    color: white;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 30px;
-    background-color: rgb(31, 42, 55);
+  font-size: 3vw;
+  display: flex;
+  justify-content: left;
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: rgb(31, 42, 55);
 }
 
-.footP{
-    
-    font-family: San FranciscoT;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center ;
+.footP {
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
 }

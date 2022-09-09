@@ -1,9 +1,9 @@
 import { React, useEffect, useState } from "react";
 
-import gRobin from "./gRobin.PNG";
-import gDaeyeon from "./gDaeyeon.PNG";
-import gJeremy from "./gJeremy.PNG";
-import gGage from "./gGage.PNG";
+import gRobin from "../assets//gRobin.PNG";
+import gDaeyeon from "../assets/gDaeyeon.PNG";
+import gJeremy from "../assets/gJeremy.PNG";
+import gGage from "../assets/gGage.PNG";
 
 import $ from "jquery";
 
@@ -66,13 +66,14 @@ function Intro(props) {
         </motion.div>
       </div>
       <div className="introText">
-      <p className="textMid introCopy"> Frontend. Backend. FullStack.</p>
+        <p className="textMid introCopy"> Frontend. Backend. FullStack.</p>
         <div className="codeGhosts">&#123;codeGhosts&#125;</div>
         <div className="introCopy">
           <p>
             Meet the codeGhosts. We are Software Engineers and Military Veterans
-            with coding skills so good... it's spooky. You need it. We can do it... or we will binge read documentation and
-            watch YouTube tutorials until we can.
+            with coding skills so good... it's spooky. You need it. We can do
+            it... or we will binge read documentation and watch YouTube
+            tutorials until we can.
           </p>
         </div>
       </div>

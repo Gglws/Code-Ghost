@@ -1,5 +1,5 @@
 import { React, useRef } from "react";
-import hRobin from "../robin/hRobin.PNG";
+import hRobin from "../assets/hRobin.PNG";
 import { motion, useInView } from "framer-motion";
 import $ from "jquery";
 
@@ -8,7 +8,8 @@ function Robin() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <motion.div ref={ref}
+    <motion.div
+      ref={ref}
       className="robinProfile"
       style={{
         transform: isInView ? "none" : "translateY(150px)",

@@ -1,8 +1,8 @@
 @font-face {
   font-family: "San FranciscoT";
-  src: local("San FranciscoT"), url(../fonts/SFPro/TrueType/SFProDisplay-Thin.ttf) format("truetype");
+  src: local("San FranciscoT"),
+    url(../fonts/SFPro/TrueType/SFProDisplay-Thin.ttf) format("truetype");
 }
-
 
 .page-nav-container {
   top: 0;
@@ -14,7 +14,8 @@
   align-items: center;
 }
 .page-nav-btn {
-  font-family: San FranciscoT;
+  font-family: "San FranciscoT", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
   display: flex;
   justify-content: left;
   font-size: 15px;
