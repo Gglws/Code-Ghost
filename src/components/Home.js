@@ -4,7 +4,7 @@ import ProfileHighlights from "../ProfileHighlights.js";
 import PlaceholderSqlBox from "../PlaceholderSqlBox.js";
 import FormFooter from "../FormFooter.js";
 import { motion, useScroll } from "framer-motion";
-import CG from "../robin/CG.PNG";
+import CG from "../assets/CG.PNG";
 import HeaderMenu from "../robin/HeaderMenu.js";
 
 export default function Home() {

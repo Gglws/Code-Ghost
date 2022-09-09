@@ -36,7 +36,7 @@ main {
   position: fixed;
   justify-content: center;
   background-color: rgb(0, 0, 0);
-  border-bottom: .5px solid white;
+  border-bottom: 0.5px solid white;
   height: 40px;
   display: flex;
   z-index: 1;
@@ -90,8 +90,6 @@ main {
 }
 
 .introCopy {
-  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial",
-    sans-serif;
   font-size: 23px;
   width: 70%;
   color: rgba(255, 255, 255, 0.57);
@@ -162,8 +160,6 @@ main {
   transition: 0.3s;
   height: auto;
   border-radius: 30px;
-
-
 }
 
 .sqlBoxTitle {
@@ -176,7 +172,6 @@ main {
   contain: content;
   text-align: center;
   /* margin-bottom: 5%; */
-  
 }
 
 .sqlBoxTitleText {
@@ -202,16 +197,16 @@ main {
   justify-content: center;
   width: 30vh;
   height: 100%;
-background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
   border-radius: 30px;
-  margin: .1%;
+  margin: 0.1%;
 }
 
 .sqlSubBoxPic {
   margin-top: 20px;
   position: relative;
-left:50%;
-transform: translate(-50%);
+  left: 50%;
+  transform: translate(-50%);
   width: 70%;
   max-width: 1200px;
   width: 50%;
@@ -549,13 +544,21 @@ textarea {
   );
   overflow: hidden;
   position: relative;
-  margin-top: 4vh;
+  margin-top: 3vh;
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
   height: 300px;
   border-radius: 30px;
   transition: 0.3s;
+}
+
+.numberOfMessages {
+  width: 100%;
+  margin-top: 10%;
+  text-align: center;
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica";
+  font-size: 25px;
 }
 
 .messageDate {
@@ -584,7 +587,7 @@ textarea {
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 2%;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .messagesFooter {
@@ -594,4 +597,9 @@ textarea {
   right: 0;
   height: 20px;
   background-color: #1d1d1f;
+}
+.signupbtn {
+  transform: translate(180%, 0%);
+    height: 25px;
+    width: 75px;
 }

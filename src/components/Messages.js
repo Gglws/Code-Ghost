@@ -1,8 +1,7 @@
 import Header from "../robin/Header.js";
 
 import { motion, useScroll } from "framer-motion";
-// import LoginForm from "../LoginForm.js";
-import CG from "../robin/CG.PNG";
+import CG from "../assets/CG.PNG";
 import HeaderMenu from "../robin/HeaderMenu.js";
 import { React, useEffect, useState } from "react";
 import $ from "jquery";
@@ -10,12 +9,10 @@ import $ from "jquery";
 export default function Messages() {
   const [scroller, setScroller] = useState(1);
   let [messages, setMessages] = useState([]);
+  let [numberOfMessages, setNumberOfMessages] = useState(0);
 
   const { scrollYProgress } = useScroll();
   let menuHidden = false;
-
-  let loggedIn = false;
-  let availableMessages = true;
 
   useEffect(
     () =>
@@ -33,16 +30,18 @@ export default function Messages() {
     []
   );
 
-  let currentUser = localStorage.getItem('name');
+  let currentUser = localStorage.getItem("name");
+  currentUser = currentUser.split(" ");
+  currentUser = currentUser[0].toLowerCase();
 
   useEffect(() => {
     $.get(`/api/messages/${currentUser}`, (data) => {
-      console.log(data);
+      numberOfMessages = data.length;
+      setNumberOfMessages(numberOfMessages);
       messages = data;
       setMessages(messages);
     }).fail(() => {
       console.log("failed");
-      availableMessages = false;
     });
   }, []);
 
@@ -70,6 +69,7 @@ export default function Messages() {
           />
         </div>
         <div className="innerApp">
+          <div className="numberOfMessages">Messages ({numberOfMessages})</div>
           <div className="outerMessageContainer">
             {messages
               .slice(0)
