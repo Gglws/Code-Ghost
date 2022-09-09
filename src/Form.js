@@ -43,13 +43,12 @@ function Form() {
     <>
     {signup ? (
       <form onSubmit={HandleSubmit} className="registration">
-      <div>New user? Sign up!</div>
         <input className="signupI"
           type="email"
           placeholder="Email"
           value={email}
           onChange={updateEmail} 
-          className="registration"
+          // className="registration"
           required
         ></input>
         <input className="signupI"
@@ -72,7 +71,7 @@ function Form() {
           value={company}
           onChange={updateCompany}
         ></input>
-        <input className="subB" type="submit"/>
+        <input className="subB signupI" type="submit"/>
       </form>
   //  <div>
   //  <h1>Don't have an account? click here to sign up!</h1>

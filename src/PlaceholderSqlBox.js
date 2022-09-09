@@ -46,7 +46,7 @@ function PlaceholderSqlBox() {
           <p className="bulletPoint">Java</p>
           <p className="bulletPointLesser">RESTful API</p>
           <p className="bulletPointLesser">Heroku/Render Deployment</p>
-          <a href="https://www.linkedin.com/in/gage-lewis1/" className="button">
+          <a href="https://www.linkedin.com/in/gage-lewis1/" className="button-linkedin">
             LinkedIn
           </a>
         </div>
