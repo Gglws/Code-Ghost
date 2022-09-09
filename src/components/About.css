@@ -38,8 +38,7 @@ nav-btn {
   display: flex;
   justify-content: center;
   font-size: 4vw;
-  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial",
-    sans-serif;
+  font-family: San FranciscoT;
   color: rgb(77, 77, 77);
 }
 .header-about-info1 {
@@ -120,8 +119,7 @@ nav-btn {
   display: flex;
   justify-content: center;
   font-size: 5vw;
-  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial",
-    sans-serif;
+  font-family: San FranciscoT;
   color: black;
 }
 .footer-about-info {
@@ -138,8 +136,7 @@ nav-btn {
 }
 
 .footP {
-  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial",
-    sans-serif;
+  font-family: San FranciscoM;
   font-size: 20px;
   padding: 20px;
   text-align: center;

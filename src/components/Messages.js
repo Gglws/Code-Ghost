@@ -1,5 +1,4 @@
 import Header from "../robin/Header.js";
-
 import { motion, useScroll } from "framer-motion";
 import CG from "../assets/CG.PNG";
 import HeaderMenu from "../robin/HeaderMenu.js";
@@ -7,7 +6,7 @@ import { React, useEffect, useState } from "react";
 import $ from "jquery";
 
 export default function Messages() {
-  const [scroller, setScroller] = useState(1);
+  const [scroller, setScroller] = useState();
   let [messages, setMessages] = useState([]);
   let [numberOfMessages, setNumberOfMessages] = useState(0);
 
@@ -21,7 +20,7 @@ export default function Messages() {
           $(".header").animate({ top: "0" }, "fast");
           menuHidden = true;
         } else if (scrollYProgress.get() === 0 && menuHidden === true) {
-          $(".header").animate({ top: "50px" }, "fast");
+          $(".header").animate({ top: "30px" }, "fast");
           menuHidden = false;
         }
 
@@ -56,8 +55,8 @@ export default function Messages() {
 
   return (
     <section>
-      <Header />
       <HeaderMenu />
+      <Header />
       <motion.div style={{ opacity: scrollYProgress }}>
         <img className="cgBig" src={CG} alt="CG" />
       </motion.div>
@@ -77,10 +76,10 @@ export default function Messages() {
               .map((message) => {
                 return (
                   <div className="messageContainer">
-                    <div className="messageDate">Date: {message.date}</div>
-                    <div className="messageFrom">From: {message.email}</div>
+                    <div className="messageDate">{message.date}</div>
+                    <div className="messageFrom">{message.email}</div>
                     <div className="messageSubject">
-                      Subject: {message.subject}
+                      {message.subject}
                     </div>
                     <div className="messageMessage">{message.message}</div>
                   </div>
