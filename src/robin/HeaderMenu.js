@@ -11,25 +11,25 @@ function HeaderMenu() {
       <div className="page-nav-container">
         <div className="page-nav-btn">
             <Link to="/" className="nav-btn-login">
-              HOME
+              home
             </Link>
             <Link to="/about" className="nav-btn-about">
-              ABOUT
+              about
             </Link>
             <Link to="/messages" className="nav-btn-login">
-          MESSAGES (TEMP)
+          messages
         </Link>
           <Link to="/logout" className="nav-btn-login">
-            SIGN OUT
+            sign out
           </Link>
-          <div className="welcome">Welcome, {LoggedName}!</div>
         </div>
+          <div className="welcome">Welcome, {LoggedName}!</div>
       </div>
     );
   } else {
   return (
     <div className="page-nav-container">
-      <div className="page-nav-btn">
+      <div className="page-nav-btn0">
         <Link to="/about" className="nav-btn-about">
           about
         </Link>

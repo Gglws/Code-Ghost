@@ -16,7 +16,7 @@ function PlaceholderSqlBox() {
         <div className="sqlSubBox">
           <img src={daeyeon} className="sqlSubBoxPic" alt="Profile Pic" />
           <h3 className="sqlBoxName">Daeyeon Cho</h3>
-          <p className="bulletPoint">JavaScript (ES5/ES6)</p>
+          <p className="bulletPoint"><br/>JavaScript (ES5/ES6)</p>
           <p className="bulletPointLesser">JQuery</p>
           <p className="bulletPointLesser">HTML5/CSS</p>
           <p className="bulletPoint">Express</p>
@@ -53,7 +53,7 @@ function PlaceholderSqlBox() {
         <div className="sqlSubBox">
           <img src={jeremy} className="sqlSubBoxPic" alt="Profile Pic" />
           <h3 className="sqlBoxName">Jeremy Linder</h3>
-          <p className="bulletPoint">JavaScript (ES5/ES6)</p>
+          <p className="bulletPoint"><br/>JavaScript (ES5/ES6)</p>
           <p className="bulletPoint">JQuery</p>
           <p className="bulletPointLesser">HTML5/CSS</p>
           <p className="bulletPoint">Express</p>
@@ -73,7 +73,7 @@ function PlaceholderSqlBox() {
         <div className="sqlSubBox">
           <img src={robin} className="sqlSubBoxPic" alt="Profile Pic" />
           <h3 className="sqlBoxName">Robin Kluis</h3>
-          <p className="bulletPoint">JavaScript (ES5/ES6)</p>
+          <p className="bulletPoint"><br/>JavaScript (ES5/ES6)</p>
           <p className="bulletPointLesser">JQuery</p>
           <p className="bulletPoint">HTML5/CSS</p>
           <p className="bulletPointLesser">Express</p>

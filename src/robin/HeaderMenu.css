@@ -10,6 +10,7 @@
   justify-content: center;
   background-color: rgb(76, 76, 76);
   height: 30px;
+  width: 100%;
   align-items: center;
 }
 .page-nav-btn {
@@ -18,25 +19,33 @@
   justify-content: left;
   font-size: 15px;
   color: rgb(214, 214, 214);
+  transform: translate(25.5%);
 }
 
 .nav-btn-about {
   display: flex;
-  justify-content: center;
 }
 
 .nav-btn-login {
   display: flex;
-  justify-content: center;
 }
 
 .welcome {
-  display: flex;
-  justify-content: center;
-  padding-left: 50px;
+  font-family: San FranciscoT;
+  align-self: center;
+left: 40%;
+transform: translate(-100%);
+position: relative;
 }
 
 a:-webkit-any-link {
   color: rgb(255, 255, 255);
   padding: 10px;
+}
+.page-nav-btn0 {
+  font-family: San FranciscoT;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  color: rgb(214, 214, 214);
 }

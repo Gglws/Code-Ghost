@@ -38,33 +38,33 @@ function Form() {
   }
   return (
     <>
-      {/* <p>Signup Form temp</p> */}
       <form onSubmit={HandleSubmit} className="registration">
-        <input
+      <div>New user? Sign up!</div>
+        <input className="signupI"
           type="email"
           placeholder="Email"
           value={email}
           onChange={updateEmail}
         ></input>
-        <input
+        <input className="signupI"
           type="password"
           placeholder="Password"
           value={password}
           onChange={updatePassword}
         ></input>
-        <input
+        <input className="signupI"
           type="text"
           placeholder="Full Name"
           value={fullName}
           onChange={updateFullName}
         ></input>
-        <input
+        <input className="signupI"
           type="text"
           placeholder="Company"
           value={company}
           onChange={updateCompany}
         ></input>
-        <input type="submit"/>
+        <input className="subB" type="submit"/>
       </form>
       <br></br>
     </>

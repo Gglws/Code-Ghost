@@ -160,41 +160,33 @@ main {
   transform: translate(-50%, 0%);
   max-width: 1200px;
   transition: 0.3s;
-  height: auto;
+  height: fit-content;
   border-radius: 30px;
-
-
 }
 
 .sqlBoxTitle {
-  height: auto;
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
   position: relative;
-  /* top: 0px; */
   contain: content;
   text-align: center;
-  /* margin-bottom: 5%; */
-  
 }
 
 .sqlBoxTitleText {
-  margin-top: 10%;
   color: #f5f5f7;
   font-size: 40px;
   line-height: 1.08349;
   letter-spacing: -0.003em;
   font-family: "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  overflow: hidden;
 }
 
 .sqlSubBoxContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 3%;
-  height: 800px;
+  margin: 1%;
+  height: 750px;
 }
 
 .sqlSubBox {
@@ -202,14 +194,14 @@ main {
   flex-direction: column;
   justify-content: center;
   width: 30vh;
-  height: 100%;
+  height: fit-content;
 background-color: rgb(0, 0, 0);
   border-radius: 30px;
-  margin: .1%;
+  margin: .5%;
+  justify-content: flex-end;
 }
 
 .sqlSubBoxPic {
-  margin-top: 20px;
   position: relative;
 left:50%;
 transform: translate(-50%);
@@ -217,6 +209,7 @@ transform: translate(-50%);
   max-width: 1200px;
   width: 50%;
   border-radius: 50%;
+  margin-top: 10px;
 }
 
 .sqlBoxName {
@@ -253,12 +246,10 @@ p.bulletPointLesser {
 a.button {
   margin-left: 15%;
   margin-right: 15%;
- bottom: 15px;
-  align-items: center;
+  margin-bottom: 20px;
   font-size: 12px;
   color: #f5f5f7;
   line-height: 1.33337;
-  /* font-weight: 400; */
   letter-spacing: -0.01em;
   font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial",
     sans-serif;
@@ -270,7 +261,6 @@ a.button {
   padding-bottom: 4px;
   border-radius: 12px;
   cursor: pointer;
-  /* display: inline-block; */
   text-align: center;
   white-space: nowrap;
   background: #0071e3;
@@ -309,7 +299,7 @@ a:visited {
 
 .form {
   display: flex;
-  width: 60vh;
+  width: 40vh;
   flex-direction: column;
   justify-content: center;
   margin-top: 2%;
@@ -319,10 +309,13 @@ a:visited {
 }
 
 .labelContainer {
-  overflow: hidden;
-  width: 50vh;
   margin-top: 3%;
   margin-left: 8%;
+}
+.formLabel{
+  font-family: San FranciscoT;
+  display: flex;
+  justify-content: center;
 }
 
 .xButton {
@@ -332,8 +325,12 @@ a:visited {
   float: right;
   background-color: #1d1d1f;
   color: #d2d2d7;
-  border-radius: 30px;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin-right: 5px;
+  
 }
+
 
 .xButton:hover,
 .submit:hover {
@@ -343,16 +340,18 @@ a:visited {
 
 .submit,
 .select {
+position: relative;
+left:50%;
+transform: translate(-50%);
   font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
   font-size: 15px;
   font-weight: 400;
-  width: 50vh;
+  width: 35vh;
   margin-top: 1%;
   color: #d2d2d7;
   border-radius: 5px;
-  background: #1d1d1f;
-  margin-left: 8%;
-  margin-right: 8%;
+  background: black;
+  border: 1px solid rgb(75, 75, 75);
 }
 
 .contactUs {
@@ -366,21 +365,24 @@ a:visited {
 .email,
 .subject,
 .message {
+  position: relative;
+left:50%;
+transform: translate(-50%);
   font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
   font-size: 15px;
   font-weight: 400;
   color: #d2d2d7;
   border-radius: 5px;
-  background: #1d1d1f;
-  width: 49vh;
+  background: #000000a0;
+  width: 35vh;
   margin-top: 1%;
-  margin-left: 4.5%;
-  margin-right: 4.5%;
   transition: 0.3s;
+  
 }
 
 textarea {
   resize: none;
+ 
 }
 
 .profileContainer {
@@ -400,7 +402,6 @@ textarea {
   position: relative;
   margin-top: 15px;
   margin-bottom: 15px;
-  width: 100%;
   height: 400px;
   border-radius: 30px;
   transition: 0.3s;

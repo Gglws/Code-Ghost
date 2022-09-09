@@ -21,7 +21,7 @@ function Intro(props) {
           $(".header").animate({ top: "0" }, "fast");
           menuHidden = true;
         } else if (props.scroll.get() === 0 && menuHidden === true) {
-          $(".header").animate({ top: "40px" }, "fast");
+          $(".header").animate({ top: "30px" }, "fast");
           menuHidden = false;
         }
 
