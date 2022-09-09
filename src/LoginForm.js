@@ -65,7 +65,7 @@ const LoginForm = () => {
         <section>
           <p ref={errRef} className={errMsg ? "errMsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
           <form onSubmit={HandleSubmit}>
-            <label htmlFor="username">Username:</label>
+            <label htmlFor="username">Email:</label>
             <input
             type="text"
             id="username"
@@ -84,7 +84,7 @@ const LoginForm = () => {
             value={password}
             required
             ></input>
-            <button>Sign In</button>
+            <button className="subB">Sign In</button>
           </form>
         </section>
       )

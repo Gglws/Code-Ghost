@@ -1,64 +1,106 @@
-@font-face {
-  font-family: "San Francisco";
-  src: local("San Francisco"),
-    url(../fonts/SFPro/TrueType/SFProDisplay-Semibold.ttf) format("truetype");
-}
-
 .header-container-login {
   display: flex;
   justify-content: center;
 }
 .header-login {
-  display: flex;
-  justify-content: center;
-  background-image: radial-gradient(
-    rgb(59, 59, 59),
-    rgba(36, 37, 41, 0.566),
-    rgba(0, 0, 0, 0)
-  );
-  margin-top: 50px;
-  color: white;
-  font-family: Lobster;
-  font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    background-image: radial-gradient(rgb(59, 59, 59),
+            rgba(36, 37, 41, 0.566),
+            rgba(0, 0, 0, 0));
+    margin-top: 50px;
+    color: white;
+    font-family: Lobster;
+    font-size: 4vw;
 }
 
 .body-container-login {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
+    display: flex;
+    justify-content: center;
 }
+
+.loginMain {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+
+    
+}
+
 .body-login {
-  display: flex;
-  justify-content: center;
-  border-radius: 30px;
-  width: 500px;
-  height: 500px;
-  background-color: rgb(255, 255, 255);
-  color: black;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    width: 30vw;
+    height: 30vw;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    margin-right: 5px;
+    align-items: center;
 }
 
 .header-login-bar {
-  position: relative;
+    position: relative;
 }
 
 .signup-container {
   display: flex;
   justify-content: center;
+    border-radius: 30px;
+    width: 30vw;
+    height: 30vw;
+    background-color: rgba(71, 71, 71, 0.571);
+    align-items: center;
+    /* border-radius: 30px; */
+    margin-left: 5px;
 }
-.signup {
-  display: flex;
-  justify-content: center;
-  border: 3px solid orange;
-  border-radius: 30px;
-  margin-top: 50px;
+
+.signupI {
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+    width: 200px;
+    align-self: center;
 }
 
 .login {
-  background-color: rgb(0, 0, 0);
-  padding: 50px;
+    background-color: rgb(0, 0, 0);
+    /* padding: 50px; */
+    
 }
 
-.loginForm {
-  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial",
-    sans-serif;
+label {
+    font-family: Lobster;
+    
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+    font-family: San FranciscoT;
+    width: 200px;
+    height: 20px;
+    background-color: rgba(107, 107, 107, 0.571);
+    color: white;
+    font-size: medium;
+}
+.registration{
+    font-size: 1.2vw;
+    font-family: San FranciscoM;
+}
+
+.subB {
+    /* position: relative; */
+    /* left:50%;
+    transform: translate(-50%); */
+    background-color: rgb(84, 84, 84);
+    border: 0px solid black;
+    width: 205px;
+    height: 20px;
+    align-self: center;
+    margin-top: 5px;
+    color:rgb(198, 198, 198);
+    font-family: San FranciscoT;
+    font-size: medium;
 }

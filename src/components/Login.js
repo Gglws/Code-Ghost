@@ -13,12 +13,12 @@ export default function Login() {
             {/* <Header /> */}
             <HeaderMenu />
             <Header />
-            {/* <Intro clasName="intro-login" scroll={scrollYProgress} /> */}
             <div className="header-container-login">
                 <div className="header-login">
                     <h1>Login here, Ghost!</h1>
                 </div>
             </div>
+            <div className='loginMain'>
             <div className="body-container-login">
                 <div className="body-login">
                     <LoginForm />
@@ -29,7 +29,7 @@ export default function Login() {
                     <Form />
                 </div>
             </div>
-            {/* <Link to='/' className="nav-btn">Go to Home</Link> */}
+            </div>
         </div>
     )
   }

@@ -43,47 +43,35 @@ function Form() {
     <>
     {signup ? (
       <form onSubmit={HandleSubmit} className="registration">
-        <label>Email:</label>
-        <br/>
-        <input
+        <input className="signupI"
           type="email"
           placeholder="Email"
           value={email}
           onChange={updateEmail} 
-          className="registration"
+          // className="registration"
           required
         ></input>
-<br/>
-        <label>Password:</label>
-        <br/>
-        <input
+        <input className="signupI"
           type="password"
           placeholder="Password"
           value={password}
           onChange={updatePassword}
           required
         ></input>
-<br/>
-        <label>Full Name:</label>
-        <br/>
-        <input
+        <input className="signupI"
           type="text"
           placeholder="Full Name"
           value={fullName}
           onChange={updateFullName}
           required
         ></input>
-<br/>
-        <label>Company:</label>
-        <br/>
-        <input
+        <input className="signupI"
           type="text"
           placeholder="Company"
           value={company}
           onChange={updateCompany}
         ></input>
-        <br/>
-        <input type="submit"/>
+        <input className="subB signupI" type="submit"/>
       </form>
   //  <div>
   //  <h1>Don't have an account? click here to sign up!</h1>
@@ -91,7 +79,7 @@ function Form() {
   //  </div>
     ) : (
       <div className="registration">
-      <h4>Don't have an account? Click below to get started!</h4>
+      <h4>Don't have an account?<br/> Click below to get started!</h4>
       <button className="signupbtn" onClick={() => setSignup(true)}>Sign up</button>
       </div>
     )}

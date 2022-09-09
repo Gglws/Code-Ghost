@@ -10,37 +10,36 @@ function HeaderMenu() {
     return (
       <div className="page-nav-container">
         <div className="page-nav-btn">
-          <Link to="/" className="nav-btn-login">
-            HOME
-          </Link>
-          <Link to="/about" className="nav-btn-about">
-            ABOUT
-          </Link>
-          <Link to="/messages" className="nav-btn-login">
-            MESSAGES
-          </Link>
+            <Link to="/" className="nav-btn-login">
+              home
+            </Link>
+            <Link to="/about" className="nav-btn-about">
+              about
+            </Link>
+            <Link to="/messages" className="nav-btn-login">
+          messages
+        </Link>
           <Link to="/logout" className="nav-btn-login">
-            SIGN OUT
+            sign out
           </Link>
-          <div className="welcome">Welcome, {LoggedName}!</div>
         </div>
+          <div className="welcome">Welcome, {LoggedName}!</div>
       </div>
     );
   } else {
-    return (
-      <div className="page-nav-container">
-          {/* <Navbar /> */}
-      <div className="page-nav-btn">
-          <Link to="/about" className="nav-btn-about">
-            ABOUT
-          </Link>
-          <Link to="/login" className="nav-btn-login">
-            LOGIN
-          </Link>
-        </div>
+  return (
+    <div className="page-nav-container">
+      <div className="page-nav-btn0">
+        <Link to="/about" className="nav-btn-about">
+          about
+        </Link>
+        <Link to="/login" className="nav-btn-login">
+          login
+        </Link>
       </div>
-    );
-  }
+    </div>
+  );
+}
 }
 
 export default HeaderMenu;
