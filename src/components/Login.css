@@ -1,60 +1,64 @@
+@font-face {
+  font-family: "San Francisco";
+  src: local("San Francisco"),
+    url(../fonts/SFPro/TrueType/SFProDisplay-Semibold.ttf) format("truetype");
+}
+
 .header-container-login {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .header-login {
-    display: flex;
-    justify-content: center;
-    background-image: radial-gradient(
-        rgb(59, 59, 59),
-        rgba(36, 37, 41, 0.566),
-        rgba(0, 0, 0, 0)
-      );
-    margin-top: 50px;
-    color: white;
-    font-family: Lobster;
-    font-size: 4vw;
+  display: flex;
+  justify-content: center;
+  background-image: radial-gradient(
+    rgb(59, 59, 59),
+    rgba(36, 37, 41, 0.566),
+    rgba(0, 0, 0, 0)
+  );
+  margin-top: 50px;
+  color: white;
+  font-family: Lobster;
+  font-size: 4vw;
 }
 
 .body-container-login {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 .body-login {
-    display: flex;
-    justify-content: center;
-    border-radius: 30px;
-    width: 500px;
-    height: 500px;
-    background-color: rgb(255, 255, 255);
-    color: black;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  width: 500px;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  color: black;
 }
 
 .header-login-bar {
-    position: relative;
-    
+  position: relative;
 }
 
 .signup-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .signup {
-    display: flex;
-    justify-content: center;
-    border: 3px solid orange;
-    border-radius: 30px;
-    margin-top: 50px;
-
+  display: flex;
+  justify-content: center;
+  border: 3px solid orange;
+  border-radius: 30px;
+  margin-top: 50px;
 }
 
 .login {
-    background-color: rgb(0, 0, 0);
-    padding: 50px;
-    
+  background-color: rgb(0, 0, 0);
+  padding: 50px;
 }
 
-.loginForm{
-    font-family: San Francisco;
+.loginForm {
+  font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
 }
