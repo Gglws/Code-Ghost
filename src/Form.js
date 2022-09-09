@@ -79,7 +79,7 @@ function Form() {
   //  </div>
     ) : (
       <div className="registration">
-      <h4>Don't have an account? Click below to get started!</h4>
+      <h4>Don't have an account?<br/> Click below to get started!</h4>
       <button className="signupbtn" onClick={() => setSignup(true)}>Sign up</button>
       </div>
     )}

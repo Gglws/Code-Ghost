@@ -85,7 +85,10 @@ input {
     color: white;
     font-size: medium;
 }
-
+.registration{
+    font-size: 1.2vw;
+    font-family: San FranciscoM;
+}
 
 .subB {
     /* position: relative; */
