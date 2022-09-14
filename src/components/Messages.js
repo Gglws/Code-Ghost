@@ -7,7 +7,7 @@ import { React, useEffect, useState } from "react";
 import $ from "jquery";
 
 export default function Messages() {
-  const [scroller, setScroller] = useState(1);
+  const [scroller, setScroller] = useState(0);
   let [messages, setMessages] = useState([]);
   let [numberOfMessages, setNumberOfMessages] = useState(0);
 
@@ -56,8 +56,9 @@ export default function Messages() {
 
   return (
     <section>
-      <Header />
       <HeaderMenu />
+      <Header />
+
       <motion.div style={{ opacity: scrollYProgress }}>
         <img className="cgBig" src={CG} alt="CG" />
       </motion.div>

@@ -35,9 +35,21 @@
   display: flex;
   justify-content: center;
   padding-left: 50px;
+  padding-top: 10px;
 }
 
-a:-webkit-any-link {
+.nav-btn-about,
+.nav-btn-login {
   color: rgb(255, 255, 255);
   padding: 10px;
 }
+
+/* a:-webkit-any-link {
+  color: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+a:-moz-any-link {
+  color: rgb(255, 255, 255);
+  padding: 10px;
+} */
