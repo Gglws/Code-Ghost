@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect, useContext } from "react";
 import AuthContext from "./context/AuthProvider.js";
 import axios from "axios";
-import Form from './Form.js';
 
 const LoginForm = () => {
   const { setAuth } = useContext(AuthContext);
@@ -13,7 +12,6 @@ const LoginForm = () => {
   const [password, setPassword] = useState("");
   const [errMsg, setErrMsg] = useState("");
   const [success, setSuccess] = useState(false);
-  const [newUser, setNewUser] = useState(false);
 
   useEffect(() => {
     userRef.current.focus();
@@ -67,7 +65,7 @@ const LoginForm = () => {
         <section>
           <p ref={errRef} className={errMsg ? "errMsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
           <form onSubmit={HandleSubmit}>
-            <label htmlFor="username">Username:</label>
+            <label htmlFor="username">Email:</label>
             <input
             type="text"
             id="username"
@@ -86,10 +84,9 @@ const LoginForm = () => {
             value={password}
             required
             ></input>
-            <button>Sign In</button>
+            <button className="subB">Sign In</button>
           </form>
         </section>
-
       )
       }
     </>

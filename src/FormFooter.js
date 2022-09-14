@@ -130,7 +130,7 @@ const FormFooter = () => {
         </motion.div>
       ) : (
         <div className="contactUs" onClick={showForm}>
-          Contact Us!
+          Contact Us! <span class="material-symbols-outlined">contact_page</span>
         </div>
       )}
     </footer>

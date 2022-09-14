@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./styles.css";
 
 function Form() {
 
@@ -7,6 +8,7 @@ function Form() {
   const [password, setPassword] = useState("");
   const [fullName, setFullName] = useState("");
   const [company, setCompany] = useState("");
+  const [signup, setSignup] = useState(false);
   const updateEmail = (event) => {
     setEmail(event.target.value);
   };
@@ -22,7 +24,7 @@ function Form() {
   function HandleSubmit(e) {
     e.preventDefault();
     axios({
-      url: "/api/userAccounts", //this needs to be replaced in production
+      url: "/api/userAccounts",
       method: "POST",
       data: { email, password, fullName, company },
       headers: {
@@ -33,42 +35,55 @@ function Form() {
       setEmail(""),
       setCompany(""),
       setPassword(""),
-      setFullName("")
+      setFullName(""),
+      alert('You\'ve signed up')
     );
   }
   return (
     <>
-      {/* <p>Signup Form temp</p> */}
+    {signup ? (
       <form onSubmit={HandleSubmit} className="registration">
-        <input
+        <input className="signupI"
           type="email"
           placeholder="Email"
           value={email}
-          onChange={updateEmail}
+          onChange={updateEmail} 
+          // className="registration"
+          required
         ></input>
-        <input
+        <input className="signupI"
           type="password"
           placeholder="Password"
           value={password}
           onChange={updatePassword}
+          required
         ></input>
-        <input
+        <input className="signupI"
           type="text"
           placeholder="Full Name"
           value={fullName}
           onChange={updateFullName}
+          required
         ></input>
-        <input
+        <input className="signupI"
           type="text"
           placeholder="Company"
           value={company}
           onChange={updateCompany}
         ></input>
-        <input type="submit"/>
+        <input className="subB signupI" type="submit"/>
       </form>
-      <br></br>
+  //  <div>
+  //  <h1>Don't have an account? click here to sign up!</h1>
+  //  <button onClick={setSignup(true)}></button>
+  //  </div>
+    ) : (
+      <div className="registration">
+      <h4>Don't have an account?<br/> Click below to get started!</h4>
+      <button className="signupbtn" onClick={() => setSignup(true)}>Sign up</button>
+      </div>
+    )}
     </>
-
   );
 }
 export default Form;
