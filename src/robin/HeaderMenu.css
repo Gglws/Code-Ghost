@@ -32,18 +32,15 @@
 }
 
 .welcome {
-<<<<<<< HEAD
   display: flex;
   justify-content: center;
   padding-left: 50px;
   padding-top: 10px;
-=======
   font-family: San FranciscoT;
   align-self: center;
-left: 40%;
-transform: translate(-100%);
-position: relative;
->>>>>>> main
+  left: 40%;
+  transform: translate(-100%);
+  position: relative;
 }
 
 .nav-btn-about,
@@ -51,7 +48,6 @@ position: relative;
   color: rgb(255, 255, 255);
   padding: 10px;
 }
-<<<<<<< HEAD
 
 /* a:-webkit-any-link {
   color: rgb(255, 255, 255);
@@ -62,7 +58,7 @@ a:-moz-any-link {
   color: rgb(255, 255, 255);
   padding: 10px;
 } */
-=======
+
 .page-nav-btn0 {
   font-family: San FranciscoT;
   display: flex;
@@ -70,4 +66,3 @@ a:-moz-any-link {
   font-size: 15px;
   color: rgb(214, 214, 214);
 }
->>>>>>> main
