@@ -1,9 +1,9 @@
 import { React, useEffect, useState } from "react";
 
-import gRobin from "../assets//gRobin.PNG";
-import gDaeyeon from "../assets/gDaeyeon.PNG";
-import gJeremy from "../assets/gJeremy.PNG";
-import gGage from "../assets/gGage.PNG";
+import gRobin from "../assets//gRobin.webp";
+import gDaeyeon from "../assets/gDaeyeon.webp";
+import gJeremy from "../assets/gJeremy.webp";
+import gGage from "../assets/gGage.webp";
 
 import $ from "jquery";
 

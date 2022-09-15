@@ -1,5 +1,5 @@
 import { React, useRef } from "react";
-import hRobin from "../assets/hRobin.PNG";
+import hRobin from "../assets/hRobin.webp";
 import { motion, useInView } from "framer-motion";
 import $ from "jquery";
 

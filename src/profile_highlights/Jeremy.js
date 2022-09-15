@@ -1,5 +1,5 @@
 import { React, useRef } from "react";
-import hJeremy from "../assets/hJeremy.PNG";
+import hJeremy from "../assets/hJeremy.webp";
 import { motion, useInView } from "framer-motion";
 
 function Jeremy() {

@@ -1,5 +1,5 @@
 import React from "react";
-import hGage from "../assets/hGage.PNG";
+import hGage from "../assets/hGage.webp";
 import video from "../assets/coding.webm";
 
 function Gage() {
