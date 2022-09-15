@@ -199,11 +199,10 @@ main {
   justify-content: center;
   width: 30vh;
   height: fit-content;
-background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
   border-radius: 30px;
-  margin: .5%;
+  margin: 0.5%;
   justify-content: flex-end;
-
 }
 
 .sqlSubBoxPic {
@@ -321,7 +320,7 @@ a:visited {
   margin-top: 3%;
   margin-left: 8%;
 }
-.formLabel{
+.formLabel {
   font-family: San FranciscoT;
   display: flex;
   justify-content: center;
@@ -337,9 +336,7 @@ a:visited {
   border-radius: 5px;
   border: 1px solid white;
   margin-right: 5px;
-  
 }
-
 
 .xButton:hover,
 .submit:hover {
@@ -349,9 +346,9 @@ a:visited {
 
 .submit,
 .select {
-position: relative;
-left:50%;
-transform: translate(-50%);
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
   font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
   font-size: 15px;
   font-weight: 400;
@@ -375,8 +372,8 @@ transform: translate(-50%);
 .subject,
 .message {
   position: relative;
-left:50%;
-transform: translate(-50%);
+  left: 50%;
+  transform: translate(-50%);
   font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
   font-size: 15px;
   font-weight: 400;
@@ -386,12 +383,10 @@ transform: translate(-50%);
   width: 35vh;
   margin-top: 1%;
   transition: 0.3s;
-  
 }
 
 textarea {
   resize: none;
- 
 }
 
 .profileContainer {
@@ -428,7 +423,7 @@ textarea {
 }
 
 .gageProfile {
-  background-color: rgba(116, 159, 197, 0.741);
+  background-color: black;
   transition: 0.3s;
 }
 
@@ -437,11 +432,13 @@ textarea {
   height: 100%;
   position: absolute;
   border-radius: 30px;
-  background-image: url(./assets/coding.gif);
   opacity: 0.7;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+}
+
+.video {
+  margin-left: 5%;
+  height: 100%;
+  border-radius: 30px;
 }
 
 .profileHeader {
@@ -553,8 +550,8 @@ textarea {
   background: rgb(66, 66, 66);
   position: relative;
   margin-top: 1vh;
-left:50%;
-transform: translate(-50%);
+  left: 50%;
+  transform: translate(-50%);
   min-height: 100px;
   border-radius: 15px;
   transition: 0.3s;
@@ -576,7 +573,6 @@ transform: translate(-50%);
   text-align: left;
   font-size: 15px;
   font-family: San FranciscoT;
-
 }
 
 .messageFrom {
@@ -592,7 +588,7 @@ transform: translate(-50%);
   width: 100%;
   height: 10%;
   text-align: left;
-  margin:10px;
+  margin: 10px;
 }
 
 .messageMessage {
@@ -614,6 +610,6 @@ transform: translate(-50%);
 }
 .signupbtn {
   transform: translate(180%, 0%);
-    height: 25px;
-    width: 75px;
+  height: 25px;
+  width: 75px;
 }
