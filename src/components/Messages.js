@@ -1,6 +1,6 @@
 import Header from "../robin/Header.js";
 import { motion, useScroll } from "framer-motion";
-import CG from "../assets/CG.PNG";
+import CG from "../assets/CG.webp";
 import HeaderMenu from "../robin/HeaderMenu.js";
 import { React, useEffect, useState } from "react";
 import $ from "jquery";

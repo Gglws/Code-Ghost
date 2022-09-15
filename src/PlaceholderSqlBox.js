@@ -1,8 +1,8 @@
 import React from "react";
-import daeyeon from "./assets/daeyeon_linkedin.jpg";
-import gage from "./assets/gage_linkedin.jpg";
-import jeremy from "./assets/jeremy_linkedin.jpg";
-import robin from "./assets/robin_linkedin.jpg";
+import daeyeon from "./assets/daeyeon_linkedin.webp";
+import gage from "./assets/gage_linkedin.webp";
+import jeremy from "./assets/jeremy_linkedin.webp";
+import robin from "./assets/robin_linkedin.webp";
 
 function PlaceholderSqlBox() {
   return (
@@ -16,7 +16,10 @@ function PlaceholderSqlBox() {
         <div className="sqlSubBox">
           <img src={daeyeon} className="sqlSubBoxPic" alt="Profile Pic" />
           <h3 className="sqlBoxName">Daeyeon Cho</h3>
-          <p className="bulletPoint"><br/>JavaScript (ES5/ES6)</p>
+          <p className="bulletPoint">
+            <br />
+            JavaScript (ES5/ES6)
+          </p>
           <p className="bulletPointLesser">JQuery</p>
           <p className="bulletPointLesser">HTML5/CSS</p>
           <p className="bulletPoint">Express</p>
@@ -41,19 +44,29 @@ function PlaceholderSqlBox() {
           <p className="bulletPointLesser">HTML5/CSS</p>
           <p className="bulletPoint">Express</p>
           <p className="bulletPointLesser">PostgresSQL</p>
-          <p className="bulletPoint">Microsoft Visual Basic<br/>(VB.NET/VBA)</p>
+          <p className="bulletPoint">
+            Microsoft Visual Basic
+            <br />
+            (VB.NET/VBA)
+          </p>
           <p className="bulletPoint">React</p>
           <p className="bulletPoint">Java</p>
           <p className="bulletPointLesser">RESTful API</p>
           <p className="bulletPointLesser">Heroku/Render Deployment</p>
-          <a href="https://www.linkedin.com/in/gage-lewis1/" className="button-linkedin">
+          <a
+            href="https://www.linkedin.com/in/gage-lewis1/"
+            className="button-linkedin"
+          >
             LinkedIn
           </a>
         </div>
         <div className="sqlSubBox">
           <img src={jeremy} className="sqlSubBoxPic" alt="Profile Pic" />
           <h3 className="sqlBoxName">Jeremy Linder</h3>
-          <p className="bulletPoint"><br/>JavaScript (ES5/ES6)</p>
+          <p className="bulletPoint">
+            <br />
+            JavaScript (ES5/ES6)
+          </p>
           <p className="bulletPoint">JQuery</p>
           <p className="bulletPointLesser">HTML5/CSS</p>
           <p className="bulletPoint">Express</p>
@@ -73,7 +86,10 @@ function PlaceholderSqlBox() {
         <div className="sqlSubBox">
           <img src={robin} className="sqlSubBoxPic" alt="Profile Pic" />
           <h3 className="sqlBoxName">Robin Kluis</h3>
-          <p className="bulletPoint"><br/>JavaScript (ES5/ES6)</p>
+          <p className="bulletPoint">
+            <br />
+            JavaScript (ES5/ES6)
+          </p>
           <p className="bulletPointLesser">JQuery</p>
           <p className="bulletPoint">HTML5/CSS</p>
           <p className="bulletPointLesser">Express</p>
@@ -83,7 +99,10 @@ function PlaceholderSqlBox() {
           <p className="bulletPoint">Git</p>
           <p className="bulletPointLesser">RESTful API</p>
           <p className="bulletPointLesser">Heroku/Render Deployment</p>
-          <a href="https://www.linkedin.com/in/rmkluis/" className="button-linkedin">
+          <a
+            href="https://www.linkedin.com/in/rmkluis/"
+            className="button-linkedin"
+          >
             LinkedIn
           </a>
         </div>

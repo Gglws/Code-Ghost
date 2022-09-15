@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import CG from "../assets/CG.PNG";
+import CG from "../assets/CG.webp";
 
 function Header() {
   return (

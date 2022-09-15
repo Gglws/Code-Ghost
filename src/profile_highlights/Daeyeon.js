@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from "react";
-import hDaeyeon from "../assets/hDaeyeon.PNG";
+import hDaeyeon from "../assets/hDaeyeon.webp";
 import $ from "jquery";
 import {
   motion,
